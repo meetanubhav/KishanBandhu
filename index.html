@@ -28,23 +28,11 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Act &amp; rules</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="#">About Us</a>
           </li>
         </ul>
         <div class="my-2 my-lg-0">
@@ -59,6 +47,7 @@
             <!-- Modal content-->
             <div class="modal-content">
               <div class="modal-header" style="padding:35px 50px;">
+                <button type="button" class="close" data-dismiss="modal">×</button>
                 <h4><span class="fa fa-lock"></span> Login</h4>
               </div>
               <div class="modal-body" style="padding:40px 50px;">
@@ -76,13 +65,11 @@
                   </div>
                   <button type="submit" class="btn btn-success btn-block"><span class="fas fa-power-off"></span>
                     Login</button>
+                  <p>Forgot <a href="#">Password?</a></p>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span
-                    class="glyphicon glyphicon-remove"></span> Cancel</button>
-                <p>Not a member? <a href="#">Sign Up</a></p>
-                <p>Forgot <a href="#">Password?</a></p>
+                <p>Not a member? <a href="farmerReg.php">Sign Up</a></p>
               </div>
             </div>
           </div>
@@ -90,20 +77,57 @@
       </div>
     </nav>
   </header>
-  <br>
   <!-- Body starts -->
   <div class="container-fluid">
+    <!-- <div class="row">
+      <img class="img-responsive" src="http://agricoop.gov.in/sites/all/themes/agricoop/images/inner-banner.jpg"
+        alt="Farmer">
+    </div> -->
+    <br>
     <div class="row">
       <div class="col-md-3 col-sm-12">
         <div class="card">
-          <div class="card-header">Mandi Price</div>
+          <div class="card-header text-center">Mandi Price</div>
           <div class="card-body text-center">Content</div>
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="card">
-          <div class="card-header text-center">Mandi Price</div>
-          <div class="card-body text-center">Content</div>
+          <div class="text-center card-header">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="home" class="container tab-pane active"><br>
+                <h3>HOME</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore
+                  magna aliqua.</p>
+              </div>
+              <div id="menu1" class="container tab-pane fade"><br>
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat.</p>
+              </div>
+              <div id="menu2" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                  totam rem
+                  aperiam.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-12">

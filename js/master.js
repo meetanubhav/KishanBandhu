@@ -3,3 +3,9 @@ $(document).ready(function () {
         $("#myModal").modal();
     });
 });
+
+$(document).ready(function () {
+    $(".nav-tabs a").click(function () {
+        $(this).tab('show');
+    });
+});
