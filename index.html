@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Home page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="js/master.js"></script>
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><i class="fas fa-tractor"></i> Kishan Bandhu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <div class="my-2 my-lg-0">
+          <button type="button" class="btn btn-info btn-lg" id="myBtn">
+            <span class="far fa-user"></span> Login/Signup
+          </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header" style="padding:35px 50px;">
+                <h4><span class="fa fa-lock"></span> Login</h4>
+              </div>
+              <div class="modal-body" style="padding:40px 50px;">
+                <form role="form">
+                  <div class="form-group">
+                    <label for="usrname"><span class="far fa-user"></span> Username</label>
+                    <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="psw"><span class="far fa-eye"></span> Password</label>
+                    <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="" checked>Remember me</label>
+                  </div>
+                  <button type="submit" class="btn btn-success btn-block"><span class="fas fa-power-off"></span>
+                    Login</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span
+                    class="glyphicon glyphicon-remove"></span> Cancel</button>
+                <p>Not a member? <a href="#">Sign Up</a></p>
+                <p>Forgot <a href="#">Password?</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <br>
+  <!-- Body starts -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-12">
+        <div class="card">
+          <div class="card-header">Mandi Price</div>
+          <div class="card-body text-center">Content</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-header text-center">Mandi Price</div>
+          <div class="card-body text-center">Content</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <div class="card">
+          <div class="card-header text-center">Sarkari Yojana</div>
+          <div class="card-body text-center">Content</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Body ended -->
+  <footer>
+
+  </footer>
+</body>
+
+</html>
