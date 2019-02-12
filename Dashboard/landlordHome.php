@@ -55,6 +55,17 @@
             </div>
         </div>
     </div>
+
+    <div class="continer-fluid">
+    <br>
+    <div class="row">
+    <div class="col-md-12 col-sm-12">
+                <div class="card">
+                    <div class="card-body text-center" id="farmerContent">Content</div>
+                </div>
+            </div>
+    </div>
+    </div>
     <!-- Body ended -->
 </body>
 
