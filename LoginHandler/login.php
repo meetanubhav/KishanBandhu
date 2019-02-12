@@ -11,10 +11,7 @@ if (isset($_POST["login"]))
 		$r=mysqli_query($con,"select * from fredg where username='$username' and password='$password'");
 		if ($arr=mysqli_fetch_assoc($r))
 			{
-				// // $_SESSION['user_id']=$user_id;
-				// $user_id=$arr['user_id'];
-				// mysqli_query($con,"insert into location(user_id, latitude, longitude) values('$user_id','$latitude','$longitude')");
-				// $_SESSION['email']=$email;
+				$_SESSION['fid']=$fid;
 				header('location: ../dashboard/farmerHome.html');
 			}
 			else{
@@ -28,10 +25,7 @@ if (isset($_POST["login"]))
 		$r=mysqli_query($con,"select * from lredg where username='$username' and password='$password'");
 		if ($arr=mysqli_fetch_assoc($r))
 			{
-				// // $_SESSION['user_id']=$user_id;
-				// $user_id=$arr['user_id'];
-				// mysqli_query($con,"insert into location(user_id, latitude, longitude) values('$user_id','$latitude','$longitude')");
-				// $_SESSION['email']=$email;
+				$_SESSION['lid']=$lid;
 				header('location: ../dashboard/landlordHome.html');
 			}
 			else{
@@ -45,10 +39,7 @@ if (isset($_POST["login"]))
 		$r=mysqli_query($con,"select * from retail where username='$username' and password='$password'");
 		if ($arr=mysqli_fetch_assoc($r))
 			{
-				// // $_SESSION['user_id']=$user_id;
-				// $user_id=$arr['user_id'];
-				// mysqli_query($con,"insert into location(user_id, latitude, longitude) values('$user_id','$latitude','$longitude')");
-				// $_SESSION['email']=$email;
+				$_SESSION['rid']=$rid;
 				header('location: ../dashboard/retailerrHome.html');
 			}
 			else{
@@ -62,10 +53,7 @@ if (isset($_POST["login"]))
 		$r=mysqli_query($con,"select * from mredg where username='$username' and password='$password'");
 		if ($arr=mysqli_fetch_assoc($r))
 			{
-				// // $_SESSION['user_id']=$user_id;
-				// $user_id=$arr['user_id'];
-				// mysqli_query($con,"insert into location(user_id, latitude, longitude) values('$user_id','$latitude','$longitude')");
-				// $_SESSION['email']=$email;
+				$_SESSION['mid']=$mid;
 				header('location: ../dashboard/mandiHome.html');
 			}
 			else{
@@ -79,10 +67,7 @@ if (isset($_POST["login"]))
 		$r=mysqli_query($con,"select * from eredg where username='$username' and password='$password'");
 		if ($arr=mysqli_fetch_assoc($r))
 			{
-				// // $_SESSION['user_id']=$user_id;
-				// $user_id=$arr['user_id'];
-				// mysqli_query($con,"insert into location(user_id, latitude, longitude) values('$user_id','$latitude','$longitude')");
-				// $_SESSION['email']=$email;
+				$_SESSION['eid']=$eid;
 				header('location: ../dashboard/expertHome.html');
 			}
 			else{
