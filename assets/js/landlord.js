@@ -7,6 +7,6 @@ function addLand() {
             id.innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "../../Dashboard/landlordAdd.php", true);
+    xhttp.open("GET", ".././Dashboard/landlordAdd.php", true);
     xhttp.send();
 }
