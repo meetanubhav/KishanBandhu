@@ -11,7 +11,7 @@ if (isset($_POST["login"]))
 	$r=mysqli_query($con,"select * from fredg where username='$username' and password='$password'");
 	}
 	else{
-		header('location: index.php');
+		header('location: ../index.html');
 	}
 
 		if ($arr=mysqli_fetch_assoc($r))
@@ -23,7 +23,7 @@ if (isset($_POST["login"]))
 			header('location: ../dashboard/farmerHome.html');
 		}
 		else{
-			header('location: index.php');
+			header('location: ../index.html');
 
 		}
 
