@@ -60,34 +60,60 @@ if ($uploadOk == 0) {
 	include '../database_driver/db.php';
 	// $r=mysqli_query($con,"insert into fredg(name, username, password, pic, uid, city, district) values('$name','$username','$password','$pic','$uid','$city','$district')");
 
-    $r=mysqli_query($con,"INSERT INTO fredg(name, username, password, pic, uid, city, district) VALUES ('$name','$username','$password','$pic','$uid','$city','$district')");
+    
 
-	if ($r>0)
-	{
+	
 		// $id = mysqli_query($con,"SELECT * FROM userdetails");
 
 		// $update_id=$r=mysqli_query($con,"insert into profie(user_id) values('$uid')");
         // $_SESSION['username']=$username;
-        if ($optradio==1) {
-            header('location: ../Dashboard/farmerHome.html');
+    if ($optradio==1) {
+        $r=mysqli_query($con,"INSERT INTO fredg(name, username, password, pic, uid, city, district) VALUES ('$name','$username','$password','$pic','$uid','$city','$district')");
+        if ($r>0)
+        {
+            header('location: ../Dashboard/farmerHome.php');
         }
-        elseif ($optradio==2) {
-            header('location: landlord.php');
-        }
-        elseif ($optradio==3) {
-            header('location: shop.php');
-        }
-        elseif ($optradio==4) {
-            header('location: mandi.php');
-        }
-        elseif ($optradio==5) {
-            header('location: expert.php');
-        }
+        else{header('location: register.html');}
+    }
 
-	}
-    else{
-		header('location: farmer.php');
-	}
-}
+    if ($optradio==2) {
+        $r=mysqli_query($con,"INSERT INTO lredg(name, username, password, pic, uid, city, district) VALUES ('$name','$username','$password','$pic','$uid','$city','$district')");
+        if ($r>0)
+        {
+            header('location: ../Dashboard/landlordHome.php');
+        }
+        else{header('location: register.html');}
+    }
+
+    if ($optradio==3) {
+        $r=mysqli_query($con,"INSERT INTO retail(name, username, password, pic, uid, city, district) VALUES ('$name','$username','$password','$pic','$uid','$city','$district')");
+        if ($r>0)
+        {
+            header('location: ../Dashboard/retailerHome.php');
+        }
+        else{header('location: register.html');}
+    }
+
+    if ($optradio==4) {
+        $r=mysqli_query($con,"INSERT INTO mredg(name, username, password, pic, uid, city, district) VALUES ('$name','$username','$password','$pic','$uid','$city','$district')");
+        if ($r>0)
+        {
+            header('location: ../Dashboard/mandiHome.php');
+        }
+        else{header('location: register.html');}
+    }
+
+    if ($optradio==5) {
+        $r=mysqli_query($con,"INSERT INTO eredg(name, username, password, pic, uid, city, district) VALUES ('$name','$username','$password','$pic','$uid','$city','$district')");
+        if ($r>0)
+        {
+            header('location: ../Dashboard/expertHome.php');
+        }
+        else{header('location: register.html');}
+    }    
+
 
 ?>
+
+ 
+    
