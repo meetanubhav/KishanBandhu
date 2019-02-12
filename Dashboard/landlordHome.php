@@ -60,11 +60,48 @@
     <div class="continer-fluid">
     <br>
     <div class="row">
-    <div class="col-md-12 col-sm-12">
-                <div class="card">
-                    <div class="card-body text-center" id="farmerContent">Content</div>
+        <div class="col-md-12 col-sm-12">
+            <div class="card">
+                <div class="card-body text-center" id="">
+                        <h2>Current Farmer Statistics</h2>
+                        <p>Farmer's report on your land</p>            
+                        <table class="table table-dark table-striped">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Land Area</th>
+                                <th>Time</th>
+                                <th>Cost</th>
+                                <th>Method of payment</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                                <td>john@example.com</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                                <td>john@example.com</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td>july@example.com</td>
+                                <td>july@example.com</td>
+                            </tr>
+                            </tbody>
+                        </table>
                 </div>
             </div>
+        </div>
     </div>
     </div>
     <!-- Body ended -->
