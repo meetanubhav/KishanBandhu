@@ -37,15 +37,8 @@
         <br>
         <div class="row">
             <div class="col-md-2 col-sm-12">
-                <div class="card">
-                    <div class="card-body text-center"><button type="button" class="btn btn-link btn-lg">Post
-                            Land</button></div>
-                    <hr>
-                    <div class="card-body text-center"><button type="button"
-                            class="btn btn-link btn-lg">Something</button></div>
-                    <hr>
-                    <div class="card-body text-center"><button type="button"
-                            class="btn btn-link btn-lg">Something</button></div>
+                <div class="text-center"><button type="button" class="btn btn-info btn-lg">
+                        <span class="fas fa-plus"></span>Add</button>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
