@@ -7,7 +7,7 @@ function availableLand() {
             id.innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "../../index.html", true);
+    xhttp.open("GET", ".././index.html", true);
     xhttp.send();
 }
 
