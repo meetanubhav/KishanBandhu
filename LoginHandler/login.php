@@ -7,6 +7,7 @@ if (isset($_POST["login"]))
 	$username=strip_tags(mysqli_real_escape_string($con,$_POST["username"]));
 	$password=strip_tags(mysqli_real_escape_string($con,$_POST["password"]));
 	$optradio = strip_tags($_POST["optradio"]);
+
 	if ($optradio==1) {
 		$r=mysqli_query($con,"select * from fredg where username='$username' and password='$password'");
 		if ($arr=mysqli_fetch_assoc($r))
@@ -75,9 +76,9 @@ if (isset($_POST["login"]))
 
 			}
 		}
-
-		
-
+	else{
+		header('location: ../index.html');
+	}
 }
 ?>
 
