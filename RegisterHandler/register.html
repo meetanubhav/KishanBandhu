@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="../css/master.css" />
+	<link rel="stylesheet" href="../assets/css/master.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/lIMGibs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Kisan bandhu</title>
 </head>
 <body>
 	<div>
@@ -26,7 +26,7 @@
 	</div>
 	<header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><i class="fas fa-tractor"></i> Kishan Bandhu</a>
+      <a class="navbar-brand" href="../index.html"><i class="fas fa-tractor"></i> Kishan Bandhu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,14 +50,48 @@
   <!-- Body starts -->
 
 	<div class="container jumbotron" id="logcontainer">
+		<!-- <div id="div_man" onclick="location.href='/subfolder/index.htm'"></div> -->
 		<h1 class="text-center">Registration</h1>
 		<br>
 		<form action="upload.php" method="POST" enctype="multipart/form-data">
 			<div class="row">
 			<div class="col-md-4 panel panel-body panel-default">
 			<!-- <img src="" class="img-rounded" alt="Profile_image" id="profileimg"></div> -->
+				<h3>Choose yourself:</h3>
+				<div>
+					<div class="form-check">
+					  <label class="form-check-label">
+					    <input type="radio" class="form-check-input" id="1" name="optradio" value="1">Farmer
+					  </label>
+					</div>
 
+					<div class="form-check">
+					  <label class="form-check-label">
+					    <input type="radio" class="form-check-input" id="2" name="optradio" value="2">Landlord
+					  </label>
+					</div>
+
+					<div class="form-check">
+					  <label class="form-check-label">
+					    <input type="radio" class="form-check-input" id="3" name="optradio" value="3">Retailer\Local Vendor
+					  </label>
+					</div>
+
+					<div class="form-check">
+					  <label class="form-check-label">
+					    <input type="radio" class="form-check-input" id="4" name="optradio" value="4" >Mandi
+					  </label>
+					</div>
+
+					<div class="form-check">
+					  <label class="form-check-label">
+					    <input type="radio" class="form-check-input" id="5" name="optradio" value="5" >Agri Expert
+					  </label>
+					</div>
+				</div>
+				<br>
 				<div class="upload-image">
+					<h3>Upload Image</h3>
 					<div class="upload-image-preview"></div>
 					<input class="" type="file" name="fileToUpload" id="fileToUpload">	
 					</div>

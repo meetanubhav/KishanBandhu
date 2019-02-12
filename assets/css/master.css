@@ -16,7 +16,6 @@
   color: white;
   text-shadow: 1px 1px 5px black;
 }
-#navbar {
-  display: flex;
-  justify-content: space-around;
+.navbar-light .navbar-brand, .nav-link {
+  /* color: white!important; */
 }

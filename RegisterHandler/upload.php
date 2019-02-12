@@ -48,11 +48,12 @@ if ($uploadOk == 0) {
 }
 
 	$name = strip_tags($_POST["name"]);
-	$username =md5($_POST["username"]);
-	$password = strip_tags($_POST["password"]);
+	$username =strip_tags($_POST["username"]);
+	$password = md5($_POST["password"]);
     $uid = strip_tags($_POST["uid"]);
     $city = strip_tags($_POST["city"]);
     $district = strip_tags($_POST["district"]);
+    $optradio = strip_tags($POST["optradio"]);
     // $timestamp=date("Y-m-d H:i:s");
 	// $pic = strip_tags($_POST["pic"]);
 
@@ -67,10 +68,24 @@ if ($uploadOk == 0) {
 
 		// $update_id=$r=mysqli_query($con,"insert into profie(user_id) values('$uid')");
         // $_SESSION['username']=$username;
-        header('location: dash.php');
-		
+        if ($optradio==1) {
+            header('location: ../Dashboard/farmerHome.html');
+        }
+        elseif ($optradio==2) {
+            header('location: landlord.php');
+        }
+        elseif ($optradio==3) {
+            header('location: shop.php');
+        }
+        elseif ($optradio==4) {
+            header('location: mandi.php');
+        }
+        elseif ($optradio==5) {
+            header('location: expert.php');
+        }
 
-	}else{
+	}
+    else{
 		header('location: farmer.php');
 	}
 }
