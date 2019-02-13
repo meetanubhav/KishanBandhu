@@ -1,4 +1,5 @@
 <?php
+session_start();
 $lid=$_SESSION['lid'];
 $_SESSION['lid']=$lid;
 ?>

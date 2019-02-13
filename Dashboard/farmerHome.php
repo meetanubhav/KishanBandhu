@@ -1,4 +1,5 @@
 <?php
+session_start();
     $fid=$_SESSION['fid'];
     $_SESSION['fid']=$fid;
 ?>
