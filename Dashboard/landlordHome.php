@@ -1,3 +1,7 @@
+<?php
+$lid=$_SESSION['lid'];
+$_SESSION['lid']=$lid;
+?>
 <!DOCTYPE html>
 <html lang="en">
 

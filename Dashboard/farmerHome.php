@@ -1,3 +1,7 @@
+<?php
+    $fid=$_SESSION['fid'];
+    $_SESSION['fid']=$fid;
+?>
 <!DOCTYPE html>
 <html lang="en">
 

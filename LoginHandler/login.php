@@ -5,7 +5,7 @@ if (isset($_POST["login"]))
 {
 	include'../database_driver/db.php';
 	$username=strip_tags(mysqli_real_escape_string($con,$_POST["username"]));
-	$password=strip_tags(mysqli_real_escape_string($con,$_POST["password"]));
+	$password=md5(mysqli_real_escape_string($con,$_POST["password"]));
 	$optradio = strip_tags($_POST["optradio"]);
 
 	if ($optradio==1) {
@@ -26,6 +26,7 @@ if (isset($_POST["login"]))
 		$r=mysqli_query($con,"select * from lredg where username='$username' and password='$password'");
 		if ($arr=mysqli_fetch_assoc($r))
 			{
+				$lid=$arr["lid"];
 				$_SESSION['lid']=$lid;
 				header('location: ../dashboard/landlordHome.php');
 			}

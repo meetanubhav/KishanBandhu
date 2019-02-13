@@ -1,3 +1,7 @@
+<?php
+$lid=$_SESSION['lid'];
+$_SESSION['lid']=$lid;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +19,7 @@
 </head>
 <body>
     <div class="container">
+        <form method="POST" action="addland.php">
         <h2 class="text-center">Add Land</h2>
         <div class="row">
             <div class="col-md-4 col-sm-12">
@@ -27,15 +32,15 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="area">Area:</label>
-                            <input type="number" class="form-control" id="area">
+                            <input type="number" class="form-control" name="area" id="area">
                         </div>
                         <div class="form-group">
                             <label for="price">Price per acer:</label>
-                            <input type="number" class="form-control" id="price">
+                            <input type="number" class="form-control" name="price" id="price">
                         </div>
                         <div class="form-group">
                             <label for="month">Select month:</label>
-                            <select class="form-control" id="month">
+                            <select class="form-control" name="month" id="month">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -49,7 +54,7 @@
                                 <option>12</option>
                             </select>
                             <label for="year">Select year:</label>
-                            <select class="form-control" id="year">
+                            <select class="form-control" name="year" id="year">
                                 <option>2019</option>
                                 <option>2020</option>
                                 <option>2021</option>
@@ -65,7 +70,7 @@
                         </div>
                         <div class="form-group">
                             <label for="desc">Description:</label>
-                            <textarea class="form-control" rows="5" id="desc"></textarea>
+                            <textarea class="form-control" rows="5" name="desc" id="desc"></textarea>
                         </div>
                     </div>
                 </div>
@@ -76,6 +81,7 @@
             <button type="button" class="btn btn-info" onclick="calculate()">Check</button>
             <button type="submit" class="btn btn-success">Submit</button>
         </div>
+        </form>
     </div>
 </body>
 </html>
