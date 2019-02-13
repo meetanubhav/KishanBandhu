@@ -34,6 +34,9 @@
     </nav>
 
     <!-- Body starts -->
+   <div class="row">
+    <img src="http://agricoop.gov.in/sites/all/themes/agricoop/images/inner-banner.jpg" alt="banner">
+  </div>
     <div class="container-fluid">
         <br>
         <div class="row">

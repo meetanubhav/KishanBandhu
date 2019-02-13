@@ -13,7 +13,7 @@ if (isset($_POST["login"]))
 		if ($arr=mysqli_fetch_assoc($r))
 			{
 				$_SESSION['fid']=$fid;
-				header('location: ../dashboard/farmerHome.html');
+				header('location: ../dashboard/farmerHome.php');
 			}
 			else{
 				header('location: ../index.html');
@@ -27,7 +27,7 @@ if (isset($_POST["login"]))
 		if ($arr=mysqli_fetch_assoc($r))
 			{
 				$_SESSION['lid']=$lid;
-				header('location: ../dashboard/landlordHome.html');
+				header('location: ../dashboard/landlordHome.php');
 			}
 			else{
 				header('location: ../index.html');
@@ -41,7 +41,7 @@ if (isset($_POST["login"]))
 		if ($arr=mysqli_fetch_assoc($r))
 			{
 				$_SESSION['rid']=$rid;
-				header('location: ../dashboard/retailerrHome.html');
+				header('location: ../dashboard/retailerrHome.php');
 			}
 			else{
 				header('location: ../index.html');
@@ -55,7 +55,7 @@ if (isset($_POST["login"]))
 		if ($arr=mysqli_fetch_assoc($r))
 			{
 				$_SESSION['mid']=$mid;
-				header('location: ../dashboard/mandiHome.html');
+				header('location: ../dashboard/mandiHome.php');
 			}
 			else{
 				header('location: ../index.html');
@@ -69,7 +69,7 @@ if (isset($_POST["login"]))
 		if ($arr=mysqli_fetch_assoc($r))
 			{
 				$_SESSION['eid']=$eid;
-				header('location: ../dashboard/expertHome.html');
+				header('location: ../dashboard/expertHome.php');
 			}
 			else{
 				header('location: ../index.html');
