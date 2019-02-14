@@ -1,3 +1,9 @@
+<?php
+session_start();
+$lid=$_SESSION['lid'];
+$_SESSION['lid']=$lid;
+$_SESSION['logout']=11;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +18,20 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#farmerContent").hide();
+  $("#hide").click(function(){
+    $("#farmerContent").hide();
+  });
+  $("#show").click(function(){
+    $("#farmerContent").show();
+  });
+});
+</script>
     <script src="../assets/js/landlord.js"></script>
+    
 </head>
 
 <body>
@@ -27,25 +46,103 @@
                 <span class="fa fa-bell"></span></button>
         </div>
         <div class="my-2 my-lg-0" id="mySignoutBtn">
-            <button type="button" class="btn btn-danger btn-lg">
+            <a  href="../SignoutHandler/lsignout.php"><button type="button" class="btn btn-danger btn-sm">
                 <span class="fa fa-power-off"></span> Sign Out
-            </button>
+            </button></a>
         </div>
     </nav>
 
     <!-- Body starts -->
+    <div class="row">
+    <img src="http://agricoop.gov.in/sites/all/themes/agricoop/images/inner-banner.jpg" alt="banner">
+  </div>
     <div class="container-fluid">
         <br>
         <div class="row">
             <div class="col-md-2 col-sm-12">
-                <div class="text-center"><button type="button" class="btn btn-info btn-lg" onclick="addLand()">
-                        <span class="fas fa-plus"></span>Add</button>
+                <div class="text-center"><button type="button" class="btn btn-info btn-md" id="show">
+                        <span class="fa fa-plus"></span>Add</button>                       
+                       <!--  <button id="hide">Hide</button>
+                        <button >Show</button> -->
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-header text-center">Booking Requests</div>
-                    <div class="card-body text-center" id="farmerContent">Content</div>
+                    <div class="card-body text-center" id="farmerContent">
+                        <form method="POST" action="addland.php">
+                            <h2 class="text-center">Add Land</h2><button type="button" class="close" data-dismiss="modal">×</button>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body text-center" id="cost"></div>
+                                    </div>
+                                    <br>
+                                    <div class="text-right">
+                                <button type="button" class="btn btn-info" onclick="calculate()">Check</button>
+                                <input type="submit" class="btn btn-success" id="hide"></button>
+                            </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <label for="area">Area:</label>
+                                                <input type="number" class="form-control" name="area" id="area">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="price">Price per acer:</label>
+                                                <input type="number" class="form-control" name="price" id="price">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="month">Select month:</label>
+                                                <select class="form-control" name="month" id="month">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                </select>
+                                                <label for="crop">Crop Type:</label>
+                                                <select class="form-control" name="crop" id="crop">
+                                                    <option>Rice</option>
+                                                    <option>Wheat</option>
+                                                    <option>Maze</option>
+                                                    <option>Jowhar</option>
+                                                    <option>Bajra</option>
+                                                </select>
+                                                <label for="year">Select year:</label>
+                                                <select class="form-control" name="year" id="year">
+                                                    <option>2019</option>
+                                                    <option>2020</option>
+                                                    <option>2021</option>
+                                                    <option>2022</option>
+                                                    <option>2023</option>
+                                                    <option>2024</option>
+                                                    <option>2025</option>
+                                                    <option>2026</option>
+                                                    <option>2027</option>
+                                                    <option>2028</option>
+                                                    <option>2029</option>
+                                                </select>
+                                            </div>
+                                           <!--  <div class="form-group">
+                                                <label for="des">Description:</label>
+                                                <textarea class="form-control" rows="5" name="des" id="des"></textarea>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">

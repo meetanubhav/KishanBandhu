@@ -1,3 +1,9 @@
+<?php
+session_start();
+    $fid=$_SESSION['fid'];
+    $_SESSION['fid']=$fid; 
+    $_SESSION['logout']=22;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,13 +33,16 @@
                 <span class="fa fa-bell"></span></button>
         </div>
         <div class="my-2 my-lg-0" id="mySignoutBtn">
-            <button type="button" class="btn btn-danger btn-lg">
+            <a  href="../SignoutHandler/lsignout.php"><button type="button" class="btn btn-danger btn-lg">
                 <span class="fa fa-power-off"></span> Sign Out
-            </button>
+            </button></a>
         </div>
     </nav>
 
     <!-- Body starts -->
+   <div class="row">
+    <img src="http://agricoop.gov.in/sites/all/themes/agricoop/images/inner-banner.jpg" alt="banner">
+  </div>
     <div class="container-fluid">
         <div class="row">
             <img src="http://agricoop.gov.in/sites/all/themes/agricoop/images/inner-banner.jpg" alt="farming" srcset="">
