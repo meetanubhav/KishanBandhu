@@ -6,10 +6,11 @@ session_start();
 	$area = strip_tags($_POST["area"]);
 	$price = strip_tags($_POST["price"]);
 	$month = strip_tags($_POST["month"]);
+	$crop = strip_tags($_POST["crop"]);
 	$year = strip_tags($_POST["year"]);
-	$des = strip_tags($_POST["name"]);
+	$des = strip_tags($_POST["des"]);
 	$tot = $price*$area*$month;
-	$r=mysqli_query($con,"INSERT INTO addland(lid, area, price, month, year, des, tot) VALUES ('$lid', '$area', '$price', '$month', '$year', '$des', '$tot)");
+	$r=mysqli_query($con,"INSERT INTO addland(lid, area, price, month, crop, year, des, tot) VALUES ('$lid', '$area', '$price', '$month', '$crop', $year', '$des', '$tot)");
 	if ($r>0)
         {
             header('location: ../Dashboard/landlordHome.php');
