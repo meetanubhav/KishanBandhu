@@ -1,7 +1,6 @@
 <?php
 session_start();
 session_destroy();
-
 $logout=$_SESSION['logout'];
 if ($logout==22) {
 	session_unset($_SESSION["fid"]);

@@ -8,7 +8,8 @@ session_start();
 	$month = strip_tags($_POST["month"]);
 	$crop = strip_tags($_POST["crop"]);
 	$year = strip_tags($_POST["year"]);
-	$des = '0';
+	// $des = strip_tags($_POST["des"]);
+	$des=0;
 	$tot = $price*$area*$month;
 	echo "$area";
 	echo "\n";
@@ -19,16 +20,19 @@ session_start();
 	echo "$crop";
 	echo "\n";
 	echo "$year";
-	echo "\n";
-	echo "$des";
+	// echo "\n";
+	// echo "$des";
 	echo "\n";
 	echo "$tot";
 	echo "\n";
+	if ($des==0) {
+		$des='no description';
+	}
 	echo $des;
 
 	include '../database_driver/db.php';
 
-	$r=mysqli_query($con,"insert into addland( lid, area, price, month, crop, year, des, tot) values ('$lid', '$area', '$price', '$month', '$crop', $year', '$des', '$tot)");
+	$result=mysqli_query($con,"insert into addland( lid, area, price, month, crop, year, des, tot) values ('$lid', '$area', '$price', '$month', '$crop', $year', '$des', '$tot)");
 
 	// $r=mysqli_query($con,"INSERT INTO addland(lid, area, price, month, crop, year, des, tot) VALUES ('$lid', '$area', '$price', '$month', '$crop', $year', '$des', '$tot)");
 	// if ($r>0)
