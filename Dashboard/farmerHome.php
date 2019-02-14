@@ -1,14 +1,17 @@
 <?php
 session_start();
-    $fid=$_SESSION['fid'];
-    $_SESSION['fid']=$fid; 
+    $fid=$_SESSION['fid']; 
     $_SESSION['logout']=22;
     include '../database_driver/db.php';
     $res=mysqli_query($con,"select * from fredg where fid='$fid'");
     $far=mysqli_fetch_assoc($res);
     $district=$far['district'];
     $r=mysqli_query($con,"select * from eredg where district='$district'");
-    
+    $result=mysqli_query($con,"select * from lredg where district='$district'");
+    $llord=mysqli_fetch_assoc($result);
+    $lid=$llord['lid'];
+    $lr=mysqli_query($con,"select * from addland where lid='$lid'");
+    $_SESSION['fid']=$fid;    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -71,7 +74,18 @@ session_start();
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="card">
-                    <div class="card-body text-center" id="farmerContent">Content</div>
+                    <div class="card-body text-center" id="farmerContent">
+                        <?php
+                         if($arr1=mysqli_fetch_assoc($lr))
+                    {
+                    echo $arr1['tot'];      
+                    echo "string";          
+                        }
+
+
+            ?>
+                
+            </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
@@ -79,10 +93,10 @@ session_start();
                     <div class="card-header text-center">Expert's Advice</div>
                     <div class="card-body text-center">
                         <?php
-                            if ($arr=mysqli_fetch_assoc($r))
-                            {
-                                echo $arr['name'];
-                            }
+                            // if ($arr=mysqli_fetch_assoc($r))
+                            // {
+                            //     echo $arr['name'];
+                            // }
                         ?>
                     </div>
                 </div>

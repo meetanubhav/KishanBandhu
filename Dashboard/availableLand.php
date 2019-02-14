@@ -14,11 +14,15 @@
 				include '../database_driver/db.php';
 				$res=mysqli_query($con,"select * from fredg where fid='$fid'");
 				$far=mysqli_fetch_assoc($res);
-				$district=$far['district'];
-				$r=mysqli_query($con,"select * from aland where district='$district'");
-				if ($arr=mysqli_fetch_assoc($r))
+				$city=$far['city'];
+				$r=mysqli_query($con,"select * from lredg where city='$city'");
+				$llord=mysqli_fetch_assoc($r);
+				$lid=$llord['lid'];
+				$lr=mysqli_query($con,"select * from addland where lid='$lid'");
+				if ($arr1=mysqli_fetch_assoc($lr))
 				{
-					
+					echo $arr1['tot'];		
+					echo "string";			
 				}
 
 

@@ -12,6 +12,7 @@ if (isset($_POST["login"]))
 		$r=mysqli_query($con,"select * from fredg where username='$username' and password='$password'");
 		if ($arr=mysqli_fetch_assoc($r))
 			{
+    			$fid=$arr['fid'];
 				$_SESSION['fid']=$fid;
 				header('location: ../dashboard/farmerHome.php');
 			}
