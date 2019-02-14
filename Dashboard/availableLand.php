@@ -12,9 +12,9 @@
 				$fid=$_SESSION['fid'];
 	    		$_SESSION['fid']=$fid;
 				include '../database_driver/db.php';
-				$res=mysqli_query($con,"select * from fredg where fid='$fid");
+				$res=mysqli_query($con,"select * from fredg where fid='$fid'");
 				$far=mysqli_fetch_assoc($res);
-				$district=$far['district']
+				$district=$far['district'];
 				$r=mysqli_query($con,"select * from aland where district='$district'");
 				if ($arr=mysqli_fetch_assoc($r))
 				{

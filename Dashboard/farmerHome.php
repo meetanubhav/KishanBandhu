@@ -3,6 +3,12 @@ session_start();
     $fid=$_SESSION['fid'];
     $_SESSION['fid']=$fid; 
     $_SESSION['logout']=22;
+    include '../database_driver/db.php';
+    $res=mysqli_query($con,"select * from fredg where fid='$fid'");
+    $far=mysqli_fetch_assoc($res);
+    $district=$far['district'];
+    $r=mysqli_query($con,"select * from eredg where district='$district'");
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -71,7 +77,14 @@ session_start();
             <div class="col-md-4 col-sm-12">
                 <div class="card">
                     <div class="card-header text-center">Expert's Advice</div>
-                    <div class="card-body text-center">Content</div>
+                    <div class="card-body text-center">
+                        <?php
+                            if ($arr=mysqli_fetch_assoc($r))
+                            {
+                                echo $arr['name'];
+                            }
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>
