@@ -15,6 +15,43 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="assets/js/master.js"></script>
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  var x=0,v=0;
+    $("#show").hide();
+  $("#clickh1").click(function(){
+    $("#show").hide();
+  });
+  $("#clickh1").click(function(){
+    if (x%2==0) {
+    $("#show").show();
+    x=x+1;
+  }
+  else{
+    $("#show").hide();
+    x=x+1
+  }
+
+  });
+   
+    $("#show2").hide();
+  $("#clickh2").click(function(){
+    $("#show2").hide();
+  });
+  $("#clickh2").click(function(){
+    if (v%2==0) {
+    $("#show2").show();
+    v=v+1;
+  }
+  else{
+    $("#show2").hide();
+    v=v+1
+  }
+
+  });
+});
+</script>
 </head>
 
 <body>
@@ -127,41 +164,27 @@
     <div class="row">
       <div class="col-md-2 col-sm-12">
         <div class="card">
-          <!-- <div class="card-header text-center">Menu Bar</div> -->
-          <div class="card-body text-center">
+          <button class="btn btn-success" style="background-color: #5cb85c;color: white;padding: 1px;" id="clickh1">Agriculture & Horticulture<br>Corner</button>
+          <div class="card-body text-center" id="show">
             <ul class="list-group list-group-flush">
-              <h3>Input</h3>
+              
               <a href="#" class="list-group-item">Seeds</a>
-              <a href="#" class="list-group-item">Fertiliser</a>
+              <a href="#" class="list-group-item" >Fertiliser</a>
               <a href="#" class="list-group-item">Pestisides</a>
-              <!-- <li class="list-group-item">Seeds</li>
-              <li class="list-group-item">Fertiliser</li>
-              <li class="list-group-item">Pestisides</li> -->
             </ul>
           </div>
-          <div class="card-body text-center">
+          <br>
+          <button class="btn btn-success" style="background-color: #5cb85c;color: white;" id="clickh2">Market</button>
+          <div class="card-body text-center" id="show2">
             <ul class="list-group list-group-flush">
-              <h3>Post Harvest</h3>
+              
               <a href="#" class="list-group-item">Seeds</a>
-              <a href="#" class="list-group-item">Fertiliser</a>
+              <a href="#" class="list-group-item" >Fertiliser</a>
               <a href="#" class="list-group-item">Pestisides</a>
-              <!-- <li class="list-group-item">Seeds</li>
-                          <li class="list-group-item">Fertiliser</li>
-                          <li class="list-group-item">Pestisides</li> -->
             </ul>
           </div>
-          <div class="card-body text-center">
-            <ul class="list-group list-group-flush">
-              <h3>Cost Management</h3>
-              <a href="#" class="list-group-item">Seeds</a>
-              <a href="#" class="list-group-item">Fertiliser</a>
-              <a href="#" class="list-group-item">Pestisides</a>
-              <!-- <li class="list-group-item">Seeds</li>
-                          <li class="list-group-item">Fertiliser</li>
-                          <li class="list-group-item">Pestisides</li> -->
-            </ul>
-          </div>
-          <div class="card-body text-center">Content</div>
+
+          <!--  -->
         </div>
       </div>
       <div class="col-md-7 col-sm-12">
@@ -205,7 +228,7 @@
       </div>
       <div class="col-md-3 col-sm-12">
         <div class="card">
-          <div class="card-header text-center">Sarkari Yojana</div>
+          <div class="card-header text-center" style="background-color: #5cb85c;color: white;">Sarkari Yojana</div>
           <div class="card-body text-center">Content</div>
         </div>
       </div>
