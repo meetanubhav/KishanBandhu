@@ -2,7 +2,7 @@
 session_start();
 $lid=$_SESSION['lid'];
 $_SESSION['lid']=$lid;
-$_SESSION['logout']=22;
+$_SESSION['logout']=11;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -132,10 +132,10 @@ $(document).ready(function(){
                                                     <option>2029</option>
                                                 </select>
                                             </div>
-                                            <div class="form-group">
+                                           <!--  <div class="form-group">
                                                 <label for="des">Description:</label>
                                                 <textarea class="form-control" rows="5" name="des" id="des"></textarea>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
