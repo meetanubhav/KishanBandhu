@@ -2,6 +2,7 @@
 session_start();
 $lid=$_SESSION['lid'];
 $_SESSION['lid']=$lid;
+$_SESSION['logout']=22;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +18,9 @@ $_SESSION['lid']=$lid;
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../assets/js/landlord.js"></script>
+    
 </head>
 
 <body>
@@ -46,14 +49,17 @@ $_SESSION['lid']=$lid;
         <br>
         <div class="row">
             <div class="col-md-2 col-sm-12">
-                <div class="text-center"><button type="button" class="btn btn-info btn-lg" onclick="addLand()">
+                <div class="text-center"><button type="button" class="btn btn-info btn-lg" id="show" ">
                         <span class="fas fa-plus"></span>Add</button>
+                        <button id="hide">Hide</button>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-header text-center">Booking Requests</div>
-                    <div class="card-body text-center" id="farmerContent">Content</div>
+                    <div class="card-body text-center" id="farmerContent">
+                        
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">

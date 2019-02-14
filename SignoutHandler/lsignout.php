@@ -1,7 +1,17 @@
 <?php
 session_start();
 session_destroy();
-session_unset($_SESSION["lid"]);
-session_unset($_SESSION['sessionid']);
-header('location:../index.html');
+
+$logout=$_SESSION['logout'];
+if ($logout==22) {
+	session_unset($_SESSION["fid"]);
+	session_unset($_SESSION['sessionid']);
+	header('location:../index.html');
+}
+elseif ($logout==11) {
+	session_unset($_SESSION["lid"]);
+	session_unset($_SESSION['sessionid']);
+	header('location:../index.html');
+}
+
 ?>

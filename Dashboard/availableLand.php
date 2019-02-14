@@ -18,7 +18,7 @@
 				$r=mysqli_query($con,"select * from aland where district='$district'");
 				if ($arr=mysqli_fetch_assoc($r))
 				{
-					$
+					
 				}
 
 
