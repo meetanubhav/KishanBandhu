@@ -15,43 +15,75 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="assets/js/master.js"></script>
   </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  var x=0,v=0;
-    $("#show").hide();
-  $("#clickh1").click(function(){
-    $("#show").hide();
-  });
-  $("#clickh1").click(function(){
-    if (x%2==0) {
-    $("#show").show();
-    x=x+1;
-  }
-  else{
-    $("#show").hide();
-    x=x+1
-  }
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script>
+    $(document).ready(function () {
+      var x = 0, v = 0;
+      $("#show").hide();
+      $("#clickh1").click(function () {
+        $("#show").hide();
+      });
+      $("#clickh1").click(function () {
+        if (x % 2 == 0) {
+          $("#show").show();
+          x = x + 1;
+        }
+        else {
+          $("#show").hide();
+          x = x + 1
+        }
 
-  });
-   
-    $("#show2").hide();
-  $("#clickh2").click(function(){
-    $("#show2").hide();
-  });
-  $("#clickh2").click(function(){
-    if (v%2==0) {
-    $("#show2").show();
-    v=v+1;
-  }
-  else{
-    $("#show2").hide();
-    v=v+1
-  }
+      });
 
-  });
-});
-</script>
+      $("#show2").hide();
+      $("#clickh2").click(function () {
+        $("#show2").hide();
+      });
+      $("#clickh2").click(function () {
+        if (v % 2 == 0) {
+          $("#show2").show();
+          v = v + 1;
+        }
+        else {
+          $("#show2").hide();
+          v = v + 1
+        }
+
+      });
+
+      $("#show3").hide();
+      $("#clickh3").click(function () {
+        $("#show3").hide();
+      });
+      $("#clickh3").click(function () {
+        if (v % 2 == 0) {
+          $("#show3").show();
+          v = v + 1;
+        }
+        else {
+          $("#show3").hide();
+          v = v + 1
+        }
+
+      });
+
+      $("#show4").hide();
+      $("#clickh4").click(function () {
+        $("#show4").hide();
+      });
+      $("#clickh4").click(function () {
+        if (v % 2 == 0) {
+          $("#show4").show();
+          v = v + 1;
+        }
+        else {
+          $("#show4").hide();
+          v = v + 1
+        }
+
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -164,12 +196,13 @@ $(document).ready(function(){
     <div class="row">
       <div class="col-md-2 col-sm-12">
         <div class="card">
-          <button class="btn btn-success" style="background-color: #5cb85c;color: white;padding: 1px;" id="clickh1">Agriculture & Horticulture<br>Corner</button>
+          <button class="btn btn-success" style="background-color: #5cb85c;color: white;padding: 1px;"
+            id="clickh1">Agriculture & Horticulture<br>Corner</button>
           <div class="card-body text-center" id="show">
             <ul class="list-group list-group-flush">
-              
+
               <a href="#" class="list-group-item">Seeds</a>
-              <a href="#" class="list-group-item" >Fertiliser</a>
+              <a href="#" class="list-group-item">Fertiliser</a>
               <a href="#" class="list-group-item">Pestisides</a>
             </ul>
           </div>
@@ -177,9 +210,29 @@ $(document).ready(function(){
           <button class="btn btn-success" style="background-color: #5cb85c;color: white;" id="clickh2">Market</button>
           <div class="card-body text-center" id="show2">
             <ul class="list-group list-group-flush">
-              
+
               <a href="#" class="list-group-item">Seeds</a>
-              <a href="#" class="list-group-item" >Fertiliser</a>
+              <a href="#" class="list-group-item">Fertiliser</a>
+              <a href="#" class="list-group-item">Pestisides</a>
+            </ul>
+          </div>
+          <br>
+          <button class="btn btn-success" style="background-color: #5cb85c;color: white;" id="clickh3">Market</button>
+          <div class="card-body text-center" id="show3">
+            <ul class="list-group list-group-flush">
+
+              <a href="#" class="list-group-item">Seeds</a>
+              <a href="#" class="list-group-item">Fertiliser</a>
+              <a href="#" class="list-group-item">Pestisides</a>
+            </ul>
+          </div>
+          <br>
+          <button class="btn btn-success" style="background-color: #5cb85c;color: white;" id="clickh4">Market</button>
+          <div class="card-body text-center" id="show4">
+            <ul class="list-group list-group-flush">
+
+              <a href="#" class="list-group-item">Seeds</a>
+              <a href="#" class="list-group-item">Fertiliser</a>
               <a href="#" class="list-group-item">Pestisides</a>
             </ul>
           </div>
