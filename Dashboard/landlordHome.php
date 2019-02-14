@@ -46,7 +46,7 @@ $(document).ready(function(){
                 <span class="fa fa-bell"></span></button>
         </div>
         <div class="my-2 my-lg-0" id="mySignoutBtn">
-            <a  href="../SignoutHandler/lsignout.php"><button type="button" class="btn btn-danger btn-lg">
+            <a  href="../SignoutHandler/lsignout.php"><button type="button" class="btn btn-danger btn-sm">
                 <span class="fa fa-power-off"></span> Sign Out
             </button></a>
         </div>
@@ -60,8 +60,8 @@ $(document).ready(function(){
         <br>
         <div class="row">
             <div class="col-md-2 col-sm-12">
-                <div class="text-center"><button type="button" class="btn btn-info btn-lg" id="show">
-                        <span class="fas fa-plus"></span>Add</button>                       
+                <div class="text-center"><button type="button" class="btn btn-info btn-md" id="show">
+                        <span class="fa fa-plus"></span>Add</button>                       
                        <!--  <button id="hide">Hide</button>
                         <button >Show</button> -->
                 </div>
@@ -71,7 +71,7 @@ $(document).ready(function(){
                     <div class="card-header text-center">Booking Requests</div>
                     <div class="card-body text-center" id="farmerContent">
                         <form method="POST" action="addland.php">
-                            <h2 class="text-center">Add Land</h2>
+                            <h2 class="text-center">Add Land</h2><button type="button" class="close" data-dismiss="modal">×</button>
                             <div class="row">
                                 <div class="col-md-4 col-sm-12">
                                     <div class="card">
