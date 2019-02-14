@@ -67,14 +67,8 @@ $(document).ready(function(){
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="form-group">
-                                                <label for="crop">Crop Type:</label>
-                                                <select class="form-control" name="crop" id="crop">
-                                                    <option>Rice</option>
-                                                    <option>Wheat</option>
-                                                    <option>Maze</option>
-                                                    <option>Jowhar</option>
-                                                    <option>Bajra</option>
-                                                </select>
+                                                <label for="crop">Item</label>
+                                                <input type="text" class="form-control" name="retailerItem" id="retailerItem">
                                             </div>
                                             <div class="form-group">
                                                 <label for="area">Quantity:</label>
