@@ -153,8 +153,8 @@ $(document).ready(function(){
                         <?php
                                  if($arr1=mysqli_fetch_assoc($lr))
                             {
-                            echo $arr1['tot'];      
-                            echo "string";    
+                            // echo $arr1['tot'];      
+                            // echo "string";    
                             ?>
                             <table class="table">
                                 <thead>
@@ -198,13 +198,15 @@ $(document).ready(function(){
                                           <button type="button" class="btn btn-success">Make Deal</button>
                                       </div>
                                       <div id="makeDeal">
-                                          <form>
+                                          <form method="POST" action="landreq.php">
                                             <div class="form-group">
                                               <label>Expected</label>
                                             </div>
                                             <div class="form-group">
                                               <label for="rev">% of revenue:</label>
                                               <input type="text" class="form-control" id="rev">
+                                              <input type="text" class="form-control" id="rev">
+                                              <input type="submit" class="btn btn-success btn-sm" name="submit">
                                             </div>
                                           </form>
                                       </div>

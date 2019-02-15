@@ -1,8 +1,13 @@
 <?php
 session_start();
+include '../database_driver/db.php';
 $lid=$_SESSION['lid'];
 $_SESSION['lid']=$lid;
 $_SESSION['logout']=11;
+$res=mysqli_query($con,"select * from lredg where lid='$lid'");
+$far=mysqli_fetch_assoc($res);
+$district=$far['district'];
+$lr=mysqli_query($con,"select * from fredg where district='$district'");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -68,7 +73,7 @@ $(document).ready(function(){
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="card">
-                    <div class="card-header text-center">Booking Requests</div>
+                    <div class="card-header text-center" style="background-color: #5cb85c;">Booking Requests</div>
                     <div class="card-body text-center" id="farmerContent">
                         <form method="POST" action="addland.php">
                             <h2 class="text-center">Add Land</h2><button type="button" class="close" data-dismiss="modal">×</button>
@@ -80,7 +85,7 @@ $(document).ready(function(){
                                     <br>
                                     <div class="text-right">
                                 <button type="button" class="btn btn-info" onclick="calculate()">Check</button>
-                                <input type="submit" class="btn btn-success" id="hide"></button>
+                                <input type="submit" class="btn btn-success" name="submit" value="Submit" placeholder="Submit" id="hide">
                             </div>
                                 </div>
                                 <div class="col-md-8 col-sm-12">
@@ -147,8 +152,34 @@ $(document).ready(function(){
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="card">
-                    <div class="card-header text-center">Farmers</div>
-                    <div class="card-body text-center">Content</div>
+                    <div class="card-header text-center" style="background-color: #5cb85c;"><b>Farmers Nearby<b></div>
+                    <div class="card-body text-center" style="background-color: #dee2e6;">
+                        <?php
+                                 if($arr1=mysqli_fetch_assoc($lr))
+                            {
+                                ?>
+                                <table class="table table-success" style="background-color: #5cb85c;color: white;">
+                                    <thead style="font-size: 12px;">
+                                    <tr>
+                                        <th>Picture</th>
+                                        <th>Name</th>
+                                        <th>City</th>
+                                        <th>District</th>
+                                    </tr>
+                                    </thead>
+                                    <tr>
+                                        <td><img src="<?php echo $arr1['pic']; ?>"style="width: 40px;"></td>
+                                        <td><?php echo $arr1['name']; ?> </td>
+                                        <td><?php echo $arr1['city']; ?> </td>
+                                        <td><?php echo $arr1['district']; ?> </td>
+                                    </tr>
+                                </table>
+                                <?php
+                            // echo $arr1['name'];      
+                            // echo "string"; 
+                            }   
+                            ?>
+                    </div>
                 </div>
             </div>
         </div>
