@@ -11,7 +11,8 @@ session_start();
     $llord=mysqli_fetch_assoc($result);
     $lid=$llord['lid'];
     $lr=mysqli_query($con,"select * from addland where lid='$lid'");
-    $_SESSION['fid']=$fid;    
+    $_SESSION['fid']=$fid; 
+    $_SESSION['lid']=$lid;  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -181,7 +182,7 @@ $(document).ready(function(){
                                     <td><?php echo $arr1['crop']; ?></td>
                                     <td><?php echo $arr1['year']; ?></td>
                                     <td class="text-sublime"><?php echo $arr1['des']; ?></td>
-                                    <td><?php echo $arr1['tot']; ?></td>
+                                    <td><?php $totalamt=$arr1['tot']; echo $totalamt ?></td>
                                     <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span></button></td>
                                   </tr>
                                 </tbody>
@@ -194,7 +195,7 @@ $(document).ready(function(){
                                     <!-- Modal body -->
                                     <div class="modal-body">
                                         <div id="btnsel">
-                                          <button type="button" class="btn btn-primary">Pay</button>
+                                          <a href="fpayment.php" style="color: white;"><button type="button" class="btn btn-primary">Pay</a></button>
                                           <button type="button" class="btn btn-success">Make Deal</button>
                                       </div>
                                       <div id="makeDeal">
@@ -253,6 +254,7 @@ $(document).ready(function(){
                     <div class="card-header text-center">Expert's Advice</div>
                     <div class="card-body text-center">
                         <?php
+                        $_SESSION['paystat']=$totalamt;
                             // if ($arr=mysqli_fetch_assoc($r))
                             // {
                             //     echo $arr['name'];
