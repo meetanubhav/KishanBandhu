@@ -52,57 +52,7 @@
         <div class="col-md-9 col-sm-12">
             <div class="card">
                 <div class="card-body text-center">
-                    <table border=1>
-                        <thead>
-                            <tr>
-                                <th>Odisha</th>
-                                <th>Angul</th>
-                                <th>Angul(Atthamallick)</th>
-                                <th>Bhindi(Ladies Finger)</th>
-                                <th>Bhindi</th>
-                                <th>14-02-2019</th>
-                                <th>3100</th>
-                                <th>3500</th>
-                                <th>3300</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Odisha</td>
-                                <td>Angul</td>
-                                <td>Angul(Atthamallick)</td>
-                                <td>Brinjal</td>
-                                <td>Brinjal</td>
-                                <td>14-02-2019</td>
-                                <td>1400</td>
-                                <td>1600</td>
-                                <td>1500</td>
-                            </tr>
-                            <tr>
-                                <td>Odisha</td>
-                                <td>Angul</td>
-                                <td>Angul(Atthamallick)</td>
-                                <td>Onion</td>
-                                <td>Onion</td>
-                                <td>14-02-2019</td>
-                                <td>1500</td>
-                                <td>7000</td>
-                                <td>1600</td>
-                            </tr>
-                            <tr>
-                                <td>Odisha</td>
-                                <td>Angul</td>
-                                <td>Angul(Atthamallick)</td>
-                                <td>Potato</td>
-                                <td>Potato</td>
-                                <td>14-02-2019</td>
-                                <td>1200</td>
-                                <td>1400</td>
-                                <td>1300</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
+                                        
                 </div>
             </div>
         </div>
