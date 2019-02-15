@@ -47,11 +47,13 @@ $(document).ready(function(){
             <div class="col-md-2 col-sm-12">
                 <div class="card">
                     <div class="text-center"><button type="button" class="btn btn-info btn-md" id="show">
-                        <span class="fa fa-plus"></span> Add</button></div><br>                
+                        <span class="fa fa-plus"></span> Add Elements</button></div><br>                
                 <div class="text-center"><button type="button" class="btn btn-info btn-md" id="show">
                         <span class="fa fa-eye"></span> View List</button></div><br>                      
                 <div class="text-center"><button type="button" class="btn btn-info btn-md" id="show">
-                        <span class="fa fa-sync" aria-hidden="true"></span> Update List</button></div>
+                        <span class="fa fa-sync" aria-hidden="true"></span> Update List</button></div><br>
+                <div class="text-center"><button type="button" class="btn btn-info btn-md" id="show">
+                        <span class="fa fa-user" aria-hidden="true"></span> Add Farmer</button></div>
                 </div>                     
                        <!--  <button id="hide">Hide</button>
                         <button >Show</button> -->
