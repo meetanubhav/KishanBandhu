@@ -23,6 +23,7 @@ session_start();
     <title>Farmer page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/css/master.css" />
+    <link rel="stylesheet" href="../assets/css/farmer.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -31,12 +32,68 @@ session_start();
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    $("#farmerContent").show();
+    $("#farmerContent").hide();
+    $("#default").show();
   $("#hide").click(function(){
     $("#farmerContent").hide();
   });
   $("#show").click(function(){
+     $("#default").hide();
     $("#farmerContent").show();
+    $("#govtScheme").hide();
+    $("#shop").hide();
+    $("#mandi").hide();
+  });
+});
+
+$(document).ready(function(){
+    $("#govtScheme").hide();
+  $("#hide").click(function(){
+    $("#govtScheme").hide();
+  });
+  $("#show1").click(function(){
+    $("#govtScheme").show();
+    $("#default").hide();
+    $("#farmerContent").hide();
+    $("#shop").hide();
+    $("#mandi").hide();
+  });
+});
+
+$(document).ready(function(){
+    $("#mandi").hide();
+  $("#hide").click(function(){
+    $("#mandi").hide();
+  });
+  $("#show2").click(function(){
+    $("#mandi").show();
+    $("#default").hide();
+    $("#farmerContent").hide();
+    $("#shop").hide();
+    $("#govtScheme").hide();
+  });
+});
+
+$(document).ready(function(){
+    $("#shop").hide();
+  $("#hide").click(function(){
+    $("#shop").hide();
+  });
+  $("#show3").click(function(){
+    $("#shop").show();
+    $("#default").hide();
+    $("#govtScheme").hide();
+    $("#farmerContent").hide();
+    $("#mandi").hide();
+  });
+});
+
+$(document).ready(function(){
+    $("#btnsel").show();
+    $("#makeDeal").hide();
+  $("#btnsel").click(function(){
+    $("#makeDeal").show();
+    $("#btnsel").hide();
   });
 });
 </script>
@@ -45,7 +102,7 @@ $(document).ready(function(){
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
         <a class="navbar-brand" href="#"><i class="fas fa-tractor"></i> Kishan Bandhu</a>
-        <div class="my-2 my-lg-0" id="myProfileBtn">
+        <div class="my-1 my-lg-0" id="myProfileBtn">
             <button type="button" class="btn btn-outline-light btn-sm">
                 <span class="fa fa-user"></span></button>
         </div>
@@ -69,36 +126,124 @@ $(document).ready(function(){
         <div class="row">
             <div class="col-md-2 col-sm-12">
                 <div class="card">
-                    <div class="card-body text-center"><button type="button" class="btn btn-link btn-lg"
-                            onclick="availableLand()">Available
+                    <div class="card-body text-center"><button type="button" class="btn btn-link btn-md"
+                            id="show">Available
                             Land</button></div>
                     <hr>
-                    <div class="card-body text-center"><button type="button" class="btn btn-link btn-lg"
-                            onclick="govtScheme()">Government<br>
+                    <div class="card-body text-center"><button type="button" class="btn btn-link btn-md"
+                            id="show1">Government<br>
                             Scheme</button></div>
                     <hr>
-                    <div class="card-body text-center"><button type="button" class="btn btn-link btn-lg"
-                            onclick="mandi()">Mandi</button></div>
+                    <div class="card-body text-center"><button type="button" class="btn btn-link btn-md"
+                            id="show2">Mandi</button></div>
                     <hr>
-                    <div class="card-body text-center"><button type="button" class="btn btn-link btn-lg"
-                            onclick="shop()">Shop</button></div>
+                    <div class="card-body text-center"><button type="button" class="btn btn-link btn-md"
+                            id="show3">Shop</button></div>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="card">
+                    <div class="card-body text-center" id="default">
+                        <h1>It is only the farmer who faithfully plants seeds in the Spring, who reaps a harvest in the Autumn.
+                        <br>
+                        ~ B. C. Forbes</h1>
+                    </div>
                     <div class="card-body text-center" id="farmerContent">
 
                         <?php
-                         if($arr1=mysqli_fetch_assoc($lr))
-                    {
-                    echo $arr1['tot'];      
-                    echo "string";          
-                        }
-
-
-            ?>
-                
-            </div>
+                                 if($arr1=mysqli_fetch_assoc($lr))
+                            {
+                            echo $arr1['tot'];      
+                            echo "string";    
+                            ?>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Area</th>
+                                    <th>Price(rs/sqf)</th>
+                                    <th>Num Month</th>
+                                    <th>Crop</th>
+                                    <th>Year</th>
+                                    <th>Description</th>
+                                    <th>Total</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <!-- <tr>
+                                    <td>Default</td>
+                                    <td>Defaultson</td>
+                                    <td>def@somemail.com</td>
+                                  </tr>  -->     
+                                  <tr class="table-primary">
+                                    <td><?php echo $arr1['area']; ?> Acers</td>
+                                    <td><?php echo $arr1['price']; ?></td>
+                                    <td><?php echo $arr1['month']; ?></td>
+                                    <td><?php echo $arr1['crop']; ?></td>
+                                    <td><?php echo $arr1['year']; ?></td>
+                                    <td class="text-sublime"><?php echo $arr1['des']; ?></td>
+                                    <td><?php echo $arr1['tot']; ?></td>
+                                    <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span></button></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog modal-sm">
+                                  <div class="modal-content">
+                                    
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div id="btnsel">
+                                          <button type="button" class="btn btn-primary">Pay</button>
+                                          <button type="button" class="btn btn-success">Make Deal</button>
+                                      </div>
+                                      <div id="makeDeal">
+                                          <form>
+                                            <div class="form-group">
+                                              <label>Expected</label>
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="rev">% of revenue:</label>
+                                              <input type="text" class="form-control" id="rev">
+                                            </div>
+                                          </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                             </div>
+                            <?php      
+                            }
+                            ?>
+                        
+                    </div>
+                    <!-- govt scheme -->
+                    <div class="card-body text-center" id="govtScheme">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <!--  -->
+                    <div class="card-body text-center" id="mandi">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <!--  -->
+                    <div class="card-body text-center" id="shop">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
