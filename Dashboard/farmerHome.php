@@ -31,7 +31,7 @@ session_start();
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    $("#farmerContent").hide();
+    $("#farmerContent").show();
   $("#hide").click(function(){
     $("#farmerContent").hide();
   });
@@ -89,11 +89,11 @@ $(document).ready(function(){
                     <div class="card-body text-center" id="farmerContent">
 
                         <?php
-                         // if($arr1=mysqli_fetch_assoc($lr))
-                    // {
-                    // echo $arr1['tot'];      
-                    // echo "string";          
-                        // }
+                         if($arr1=mysqli_fetch_assoc($lr))
+                    {
+                    echo $arr1['tot'];      
+                    echo "string";          
+                        }
 
 
             ?>

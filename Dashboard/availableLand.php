@@ -37,7 +37,7 @@
 			?>
 		</div>
 			<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span></button>
-			div class="modal fade" id="myModal">
+			<div class="modal fade" id="myModal">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         
