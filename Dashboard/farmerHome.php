@@ -312,7 +312,42 @@ $(document).ready(function(){
                     </div>
                     <!--  -->
                     <div class="card-body text-center" id="mandi">
-                        Mandi rates
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th>State</th>
+                                <th>District</th>
+                                <th>Commmodit</th>
+                                <th>Max price</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Odisha</td>
+                                <td>Bargarh</td>
+                                <td>Brinjal</td>
+                                <td>1600</td>
+                              </tr>
+                              <tr>
+                                <td>Odisha</td>
+                                    <td>Bargarh</td>
+                                    <td>Cauliflower</td>
+                                    <td>1500</td>
+                              </tr>
+                              <tr>
+                                <td>Odisha</td>
+                                    <td>Bargarh</td>
+                                    <td>Onion</td>
+                                    <td>1500</td>
+                              </tr>
+                              <tr>
+                                <td>Odisha</td>
+                                    <td>Bargarh</td>
+                                    <td>Potato</td>
+                                    <td>1500</td>
+                              </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <!--  -->
                     <div class="card-body text-center" id="shop">
