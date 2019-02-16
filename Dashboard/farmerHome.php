@@ -237,6 +237,7 @@ $(document).ready(function(){
                                 </tbody>
                                 
                               <?php }  ?>
+                              <br>
                                   </table>
                               
                             
