@@ -294,7 +294,7 @@ $(document).ready(function(){
                   <td>Gramin Bhandaran Yojna</td>
                 </tr>
               </tbody>
-            </table>
+            </table>  
                     </div>
                     <!--  -->
                     <div class="card-body text-center" id="mandi">
@@ -317,6 +317,36 @@ $(document).ready(function(){
                             //     echo $arr['name'];
                             // }
                         ?>
+                        <div class="container">
+                          <h2>Hover Rows</h2>
+                          <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>            
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th>Profile Pic</th>
+                                <th>Name</th>
+                                <th>Phone number</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><img src="https://thispersondoesnotexist.com/" class="rounded" height="32px" width="32px" alt="Cinque Terre"></td>
+                                <td>Atla Harish</td>
+                                <td><i class="fa fa-phone" aria-hidden="true"><a href="tel:+918298143224">+918298143224</a></i></td>
+                              </tr>
+                              <tr>
+                                <td><img src="https://thispersondoesnotexist.com/" class="rounded" height="32px" width="32px" alt="Cinque Terre"></td>
+                                <td>John Snow</td>
+                                <td><i class="fa fa-phone" aria-hidden="true"><a href="tel:+918298143224">+917094538234</a></i></td>
+                              </tr>
+                              <tr>
+                                <td><img src="https://thispersondoesnotexist.com/" class="rounded" height="32px" width="32px" alt="Cinque Terre"></td>
+                                <td>Suraj Lee</td>
+                                <td><i class="fa fa-phone" aria-hidden="true"><a href="tel:+918298143224">+919834567292</a></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
                     </div>
                 </div>
             </div>
