@@ -332,7 +332,7 @@ $(document).ready(function(){
                               <tr>
                                 <td><img src="https://thispersondoesnotexist.com/" class="rounded" alt="Cinque Terre"></td>
                                 <td>Atla Harish</td>
-                                <td><a href="tel:+918298143224">+918298143224</a></td>
+                                <td><i class="fa fa-phone" aria-hidden="true"><a href="tel:+918298143224">+918298143224</a></i></td>
                               </tr>
                               <tr>
                                 <td>Mary</td>
