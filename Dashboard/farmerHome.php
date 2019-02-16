@@ -190,10 +190,17 @@ $(document).ready(function(){
                                     $paycheck=mysqli_query($con,"select * from fpay where landid='$landid'");
                                     if($payfetch=mysqli_fetch_assoc($paycheck))
                                     {
-                                        
-                                    }
+                                        if($payfetch['paystat']==0)
+                                        {
                                     ?>                                    
                                     <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span></button></td>
+                                    <?php
+                                    }
+                                    else{
+                                        echo "Land booked";
+                                    }
+                                    } 
+                                    ?>
                                   </tr>
                                 </tbody>
                               </table>
