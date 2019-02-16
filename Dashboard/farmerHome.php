@@ -230,13 +230,14 @@ $(document).ready(function(){
                                     <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span></button></td>
                                     <?php
                                     }
-                                    else{?><td>echo "Land booked";</td><?php }
+                                    else{?><td><?php echo "Land booked";?></td><?php }
                                     
                                     ?>
                                   </tr>
                                 </tbody>
                                 
                               <?php }  ?>
+                                  </table>
                               
                             
                             <div class="modal fade" id="myModal">
