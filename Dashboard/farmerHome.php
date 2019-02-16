@@ -318,8 +318,8 @@ $(document).ready(function(){
                             // }
                         ?>
                         <div class="container">
-                          <h2>Hover Rows</h2>
-                          <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>            
+                          <h2>Give a call</h2>
+                          <!-- <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>             -->
                           <table class="table table-hover">
                             <thead>
                               <tr>
