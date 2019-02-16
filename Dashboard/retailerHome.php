@@ -3,9 +3,9 @@ session_start();
     $rid=$_SESSION['rid']; 
     $_SESSION['logout']=33;
     include '../database_driver/db.php';
-    $res=mysqli_query($con,"select * from retail where rid='$rid'");
-    $far=mysqli_fetch_assoc($res);
-    $district=$far['district'];
+    // $res=mysqli_query($con,"select * from retail where rid='$rid'");
+    // $far=mysqli_fetch_assoc($res);
+    // $district=$far['district'];
     ?>
 <!DOCTYPE html>
 <html lang="en">
