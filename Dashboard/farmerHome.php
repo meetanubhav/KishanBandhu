@@ -182,7 +182,17 @@ $(document).ready(function(){
                                     <td><?php echo $arr1['crop']; ?></td>
                                     <td><?php echo $arr1['year']; ?></td>
                                     <td class="text-sublime"><?php echo $arr1['des']; ?></td>
-                                    <td><?php $totalamt=$arr1['tot']; echo $totalamt ?></td>
+                                    <td><?php $totalamt=$arr1['tot'];
+                                    $landid=$arr1['landid'];
+                                    echo $totalamt; ?></td>
+                                    <?php 
+                                    $_SESSION['landid']=$landid;
+                                    $paycheck=mysqli_query($con,"select * from lredg where landid='$landid'");
+                                    if($payfetch=mysqli_fetch_assoc($paycheck))
+                                    {
+                                        
+                                    }
+                                    ?>                                    
                                     <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span></button></td>
                                   </tr>
                                 </tbody>
