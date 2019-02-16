@@ -236,7 +236,7 @@ $(document).ready(function(){
                                   </tr>
                                 
                                 
-                              <?php }  ?>
+                              <?php }}  ?>
                               </tbody>
                               <br>
                                   </table>
