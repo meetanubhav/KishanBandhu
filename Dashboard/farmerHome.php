@@ -162,12 +162,7 @@ $(document).ready(function(){
                     </div>
                     <div class="card-body text-center" id="farmerContent">
 
-                        <?php
-                                 if($arr1=mysqli_fetch_assoc($lr))
-                            {
-                            // echo $arr1['tot'];      
-                            // echo "string";    
-                            ?>
+                       
                             <table class="table table-light table-striped">
                                 <thead>
                                   <tr>
@@ -186,6 +181,12 @@ $(document).ready(function(){
                                     <td>Defaultson</td>
                                     <td>def@somemail.com</td>
                                   </tr>  -->     
+                                   <?php
+                                 if($arr1=mysqli_fetch_assoc($lr))
+                            {
+                            // echo $arr1['tot'];      
+                            // echo "string";    
+                            ?>
                                   <tr class="table-primary">
                                     <td><?php echo $arr1['area']; ?> Acers</td>
                                     <td><?php echo $arr1['price']; ?></td>
