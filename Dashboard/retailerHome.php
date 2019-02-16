@@ -1,4 +1,13 @@
-x<!DOCTYPE html>
+<?php
+session_start();
+    $rid=$_SESSION['rid']; 
+    $_SESSION['logout']=33;
+    include '../database_driver/db.php';
+    $res=mysqli_query($con,"select * from retail where rid='$rid'");
+    $far=mysqli_fetch_assoc($res);
+    $district=$far['district'];
+    ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -93,7 +102,22 @@ $(document).ready(function(){
             <div class="col-md-4 col-sm-12">
                 <div class="card">
                     <div class="card-header text-center">Farmers</div>
-                    <div class="card-body text-center">Content</div>
+                    <div class="card-body text-center">
+                        <table>
+                        <?php
+                             $r=mysqli_query($con,"select * from fredg");
+                             while($arr1 = $r->fetch_assoc()){
+                                ?>
+                                <td><img src="<?php echo $arr1['pic']; ?>"style="width: 40px;"></td>
+                                <td><?php echo $arr1['name']; ?> </td>
+                                <td><?php echo $arr1['city']; ?> </td>
+                                <td><?php echo $arr1['district']; ?> </td>
+                                <
+                                <?php
+                             }
+                        ?>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
