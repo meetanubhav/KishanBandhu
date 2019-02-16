@@ -150,7 +150,14 @@ $(document).ready(function(){
                         ~ B. C. Forbes</h1>
                     </div>
                     <div class="card-body text-center" id="farmerContent">
-                        <table class="table">
+
+                        <?php
+                                 if($arr1=mysqli_fetch_assoc($lr))
+                            {
+                            // echo $arr1['tot'];      
+                            // echo "string";    
+                            ?>
+                            <table class="table">
                                 <thead>
                                   <tr>
                                     <th>Area</th>
@@ -162,14 +169,7 @@ $(document).ready(function(){
                                     <th>Total</th>
                                   </tr>
                                 </thead>
-                        <?php
-                                while ($arr1 = $lr->fetch_assoc())
-                                 // if($arr1=mysqli_fetch_assoc($lr))
-                            {
-                            // echo $arr1['tot'];      
-                            // echo "string";    
-                            ?>
-                            <tbody>
+                                <tbody>
                                   <!-- <tr>
                                     <td>Default</td>
                                     <td>Defaultson</td>
