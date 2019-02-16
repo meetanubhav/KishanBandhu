@@ -294,7 +294,7 @@ $(document).ready(function(){
                   <td>Gramin Bhandaran Yojna</td>
                 </tr>
               </tbody>
-            </table>
+            </table>  
                     </div>
                     <!--  -->
                     <div class="card-body text-center" id="mandi">
@@ -317,6 +317,36 @@ $(document).ready(function(){
                             //     echo $arr['name'];
                             // }
                         ?>
+                        <div class="container">
+                          <h2>Hover Rows</h2>
+                          <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>            
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th>Profile Pic</th>
+                                <th>Name</th>
+                                <th>Phone number</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><img src="https://thispersondoesnotexist.com/" class="rounded" alt="Cinque Terre"></td>
+                                <td>Atla Harish</td>
+                                <td><a href="tel:+918298143224">+918298143224</a></td>
+                              </tr>
+                              <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                              </tr>
+                              <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
                     </div>
                 </div>
             </div>
