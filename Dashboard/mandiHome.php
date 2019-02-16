@@ -1658,8 +1658,35 @@ include '../database_driver/db.php';
                         </table>
                     </div>
                     <div id="farmerList">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cumque consequatur ducimus quae voluptate quasi? 
-Repellendus unde quidem quasi mollitia cupiditate, iusto libero atque aliquam impedit ipsum est excepturi tempora.
+<?php 
+$res=mysqli_query($con,"select * from mredg where mid='$mid'");
+$far=mysqli_fetch_assoc($res);
+$district=$far['district'];
+$lr=mysqli_query($con,"select * from fredg where district='$district'");
+if($arr1=mysqli_fetch_assoc($lr))
+                            {
+                                ?>
+                                <table class="table table-success" style="background-color: #5cb85c;color: white;">
+                                    <thead style="font-size: 12px;">
+                                    <tr>
+                                        <th>Picture</th>
+                                        <th>Name</th>
+                                        <th>City</th>
+                                        <th>District</th>
+                                    </tr>
+                                    </thead>
+                                    <tr>
+                                        <td><img src="<?php echo $arr1['pic']; ?>"style="width: 40px;"></td>
+                                        <td><?php echo $arr1['name']; ?> </td>
+                                        <td><?php echo $arr1['city']; ?> </td>
+                                        <td><?php echo $arr1['district']; ?> </td>
+                                    </tr>
+                                </table>
+                                 <?php
+                            // echo $arr1['name'];      
+                            // echo "string"; 
+                            }   
+                            ?>
                     </div>
                     <div id="farmerUpdate">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique quia a laboriosam rem earum, 
