@@ -10,11 +10,8 @@
         {
             header('location: ../Dashboard/farmerHome.php');
         }
-        else{ 
-<<<<<<< HEAD
+        else{
             header('location: error.html');
-=======
         	header('location: error.html');
->>>>>>> 2578c6ec213ab3670bb9c1b42d70017a256c680e
         }
 ?>
