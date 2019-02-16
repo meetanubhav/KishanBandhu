@@ -196,6 +196,9 @@ $(document).ready(function(){
                                     <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span></button></td>
                                     <?php
                                     }
+                                    else{
+                                        echo "Land booked";
+                                    }
                                     } 
                                     ?>
                                   </tr>
