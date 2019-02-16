@@ -68,10 +68,13 @@ $(document).ready(function(){
         <div class="row">
             <div class="col-md-2 col-sm-12">
                 <div class="text-center"><button type="button" class="btn btn-info btn-md" id="show">
-                        <span class="fa fa-plus"></span>Add</button>                       
+                        <span class="fa fa-plus"></span>Add</button> 
+                                             
                        <!--  <button id="hide">Hide</button>
                         <button >Show</button> -->
                 </div>
+                <br>
+                        <img src="https://image.isu.pub/110110103442-bb8b1c429ea8430e88e285d0060a0385/jpg/page_1_thumb_large.jpg" style="height: 200px;width: inherit;"> 
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="card">
@@ -214,6 +217,23 @@ $(document).ready(function(){
                             <tr>
                                 <td>Krushna</td>
                                 <td>15 acers</td>
+                                <td>9 months</td>
+                                <td>15,000</td>
+                                <td>Capital</td>
+                            </tr>
+                            <tr>
+                                <td>Sai Kiran</td>
+                                <td>13 acers</td>
+                                <td>12 months</td>
+                                <td>18,458</td>
+                                <td>40% of revenue</td>
+                            </tr>
+                            <tr>
+                                <td>Kshitij</td>
+                                <td>9 acers</td>
+                                <td>10 months</td>
+                                <td>16,229</td>
+                                <td>10%revenue + capital</td>
                                 <td>5 months</td>
                                 <td>10000</td>
                                 <td>Debit card</td>
