@@ -43,7 +43,7 @@ if (isset($_POST["login"]))
 		if ($arr=mysqli_fetch_assoc($r))
 			{
 				$_SESSION['rid']=$rid;
-				header('location: ../dashboard/retailerrHome.php');
+				header('location: ../dashboard/retailerHome.php');
 			}
 			else{
 				header('location: ../index.html');
