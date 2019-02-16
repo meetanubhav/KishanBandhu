@@ -120,7 +120,7 @@ $(document).ready(function(){
                                 <td><?php echo $arr1['name']; ?> </td>
                                 <td><?php echo $arr1['city']; ?> </td>
                                 <td><?php echo $arr1['district']; ?> </td>
-                                <
+                                <   
                                 <?php
                              }
                         ?>
