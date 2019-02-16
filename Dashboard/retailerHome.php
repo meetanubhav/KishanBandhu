@@ -53,6 +53,8 @@ $(document).ready(function(){
     <div class="container-fluid">
         <br>
         <div class="row">
+            <img src="http://agricoop.gov.in/sites/all/themes/agricoop/images/inner-banner.jpg"  style="width: -webkit-fill-available;
+" alt="banner">
             <div class="col-md-2 col-sm-12">
                 <div class="card">
                     <div class="text-center"><button type="button" class="btn btn-info btn-md" id="show">
