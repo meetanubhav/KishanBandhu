@@ -213,8 +213,8 @@ $(document).ready(function(){
                             <tbody>
                             <tr>
                                 <td>Krushna</td>
-                                <td>Debajyot</td>
-                                <td>Rama</td>
+                                <td>15 acers</td>
+                                <td></td>
                                 <td>Suraj</td>
                                 <td>Sai kiran</td>
                             </tr>
