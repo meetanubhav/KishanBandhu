@@ -187,7 +187,7 @@ $(document).ready(function(){
                                     echo $totalamt; ?></td>
                                     <?php 
                                     $_SESSION['landid']=$landid;
-                                    $paycheck=mysqli_query($con,"select * from lredg where landid='$landid'");
+                                    $paycheck=mysqli_query($con,"select * from fpay where landid='$landid'");
                                     if($payfetch=mysqli_fetch_assoc($paycheck))
                                     {
                                         
