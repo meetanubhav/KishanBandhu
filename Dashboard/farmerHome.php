@@ -201,14 +201,14 @@ $(document).ready(function(){
                                     <td>Default</td>
                                     <td>Defaultson</td>
                                     <td>def@somemail.com</td>
-                                  </tr>  -->     
+                                  </tr>  -->  <tbody>   
                                    <?php
                                  // if($arr1=mysqli_fetch_assoc($lr))
                                    while ($arr1 = $lr->fetch_assoc())
                             {
                             // echo $arr1['tot'];      
                             // echo "string";    
-                            ?><tbody>
+                            ?>
                                   <tr class="table-primary">
                                     <td><?php echo $arr1['area']; ?> Acers</td>
                                     <td><?php echo $arr1['price']; ?></td>
@@ -230,15 +230,14 @@ $(document).ready(function(){
                                     <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span></button></td>
                                     <?php
                                     }
-                                    else{
-                                        print_r("Land booked");
-                                    }
+                                    else{?><td>echo "Land booked";</td><?php }
                                     
                                     ?>
                                   </tr>
                                 </tbody>
+                                
                               <?php }  ?>
-                              </table>
+                              
                             
                             <div class="modal fade" id="myModal">
                                 <div class="modal-dialog modal-sm">
