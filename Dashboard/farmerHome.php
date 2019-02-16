@@ -168,7 +168,7 @@ $(document).ready(function(){
                             id="show2">Mandi</button></div>
                     <hr>
                     <div class="card-body text-center"><button type="button" class="btn btn-link btn-md"
-                            id="show4">Mandi Book</button></div>
+                            id="show4">Mandi Slot Book</button></div>
                     <hr>
                     <div class="card-body text-center"><button type="button" class="btn btn-link btn-md"
                             id="show3">Shop</button></div>
@@ -203,7 +203,8 @@ $(document).ready(function(){
                                     <td>def@somemail.com</td>
                                   </tr>  -->     
                                    <?php
-                                 if($arr1=mysqli_fetch_assoc($lr))
+                                 // if($arr1=mysqli_fetch_assoc($lr))
+                                   while ($arr1 = $lr->fetch_assoc())
                             {
                             // echo $arr1['tot'];      
                             // echo "string";    
