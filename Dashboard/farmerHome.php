@@ -111,12 +111,7 @@ $(document).ready(function(){
             <button type="button" class="btn btn-outline-light btn-sm">
                 <span class="fa fa-bell"></span></button>
         </div>
-        <div class="my-2 my-lg-0" id="mySignoutBtn">
-            <a  href="../SignoutHandler/lsignout.php"><button type="button" class="btn btn-danger btn-lg">
-                <span class="fa fa-power-off"></span> Sign Out
-            </button></a>
-        </div>
-        <div class="my-2 my-lg-0" id="mySignoutBtn">
+        <div class="my-2 my-lg-0" id="">
             <div id="google_translate_element"></div>
             <script type="text/javascript">
             function googleTranslateElementInit() {
@@ -125,6 +120,10 @@ $(document).ready(function(){
             </script>
             <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </div>
+        <div class="my-2 my-lg-0" id="mySignoutBtn">
+            <a  href="../SignoutHandler/lsignout.php"><button type="button" class="btn btn-danger btn-lg">
+                <span class="fa fa-power-off"></span> Sign Out
+            </button></a>
         </div>
     </nav>
 
