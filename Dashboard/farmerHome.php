@@ -121,7 +121,7 @@ $(document).ready(function(){
     <!-- Body starts -->
     <div class="container-fluid">
         <div class="row">
-            <img src="http://agricoop.gov.in/sites/all/themes/agricoop/images/inner-banner.jpg" alt="farming" srcset="">
+            <img class="img-fluid mx-auto d-block" src="http://agricoop.gov.in/sites/all/themes/agricoop/images/inner-banner.jpg" alt="farming" srcset="">
         </div>
         <br>
         <div class="row">
