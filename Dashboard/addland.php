@@ -2,7 +2,8 @@
 session_start();
 	$lid=$_SESSION['lid'];
 	
-	
+if (isset($_POST["submit"]))
+{
 	$area = strip_tags($_POST["area"]);
 	$price = strip_tags($_POST["price"]);
 	$month = strip_tags($_POST["month"]);
@@ -11,6 +12,8 @@ session_start();
 	// $des = strip_tags($_POST["des"]);
 	$des=0;
 	$tot = $price*$area*$month;
+	echo "$lid";
+	echo "\n";
 	echo "$area";
 	echo "\n";
 	echo "$price";
@@ -34,12 +37,14 @@ session_start();
 
 	$result=mysqli_query($con,"insert into addland( lid, area, price, month, crop, year, des, tot) values ('$lid', '$area', '$price', '$month', '$crop', $year', '$des', '$tot)");
 
+
 	// $r=mysqli_query($con,"INSERT INTO addland(lid, area, price, month, crop, year, des, tot) VALUES ('$lid', '$area', '$price', '$month', '$crop', $year', '$des', '$tot)");
-	// if ($r>0)
- //        {
- //        	echo "string";
- //        	$_SESSION['lid']=$lid;
- //            header('location:  landlordHome.php');
- //        }
- //        else{header('location: error.html');}
+	if ($r>0)
+        {
+        	echo "string";
+        	$_SESSION['lid']=$lid;
+            header('location:  landlordHome.php');
+        }
+        else{header('location: error.html');}
+}
 ?>
