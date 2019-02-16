@@ -1682,6 +1682,11 @@ if($arr1=mysqli_fetch_assoc($lr))
                                         <td><?php echo $arr1['district']; ?> </td>
                                     </tr>
                                 </table>
+                                 <?php
+                            // echo $arr1['name'];      
+                            // echo "string"; 
+                            }   
+                            ?>
                     </div>
                     <div id="farmerUpdate">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique quia a laboriosam rem earum, 
