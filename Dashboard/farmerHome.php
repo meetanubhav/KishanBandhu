@@ -162,7 +162,6 @@ $(document).ready(function(){
                                     <th>Total</th>
                                   </tr>
                                 </thead>
-                                <tbody>
                         <?php
                                 while ($arr1 = $lr->fetch_assoc())
                                  // if($arr1=mysqli_fetch_assoc($lr))
@@ -170,7 +169,7 @@ $(document).ready(function(){
                             // echo $arr1['tot'];      
                             // echo "string";    
                             ?>
-                            
+                            <tbody>
                                   <!-- <tr>
                                     <td>Default</td>
                                     <td>Defaultson</td>
