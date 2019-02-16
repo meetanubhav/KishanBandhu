@@ -312,6 +312,7 @@ $(document).ready(function(){
                     </div>
                     <!--  -->
                     <div class="card-body text-center" id="mandi">
+                      <h3>Mandi Prices</h3>
                         <table class="table table-hover">
                             <thead>
                               <tr>
