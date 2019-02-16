@@ -233,13 +233,14 @@ $(document).ready(function(){
                                               <label></label>
                                             </div>
                                             <div class="form-group">
-                                              <label for="rev">% of revenue:</label>
+                                              <label for="rev">% of revenue:
                                               <input type="text" class="form-control" id="rev">
                                           </div>
                                           <div class="form-group">
-                                              <input type="text" class="form-control" id="rev">
+                                              <!-- <input type="text" class="form-control" id="rev"> -->
                                               <input type="submit" class="btn btn-success btn-sm" name="submit">
                                             </div>
+                                            <!-- <button type="submit" class="btn btn-success btn-sm"></button> -->
                                           </form>
                                       </div>
                                     </div>
