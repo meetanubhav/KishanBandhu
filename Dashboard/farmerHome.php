@@ -220,18 +220,18 @@ $(document).ready(function(){
                                     <?php 
                                     $_SESSION['landid']=$landid;
                                     $paycheck=mysqli_query($con,"select * from fpay where landid='$landid'");
-                                    // if($payfetch=mysqli_fetch_assoc($paycheck))
-                                    // {
-                                    //     if($payfetch['paystat']==0)
-                                    //     {
+                                    if($payfetch=mysqli_fetch_assoc($paycheck))
+                                    {
+                                        if($payfetch['paystat']==0)
+                                        {
                                     ?>                                    
                                     <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span></button></td>
                                     <?php
-                                    // }
-                                    // else{
-                                    //     echo "Land booked";
-                                    // }
-                                    // } 
+                                    }
+                                    else{
+                                        echo "Land booked";
+                                    }
+                                    } 
                                     ?>
                                   </tr>
                                 </tbody>
@@ -333,6 +333,7 @@ $(document).ready(function(){
                     </div>
                     <!--  -->
                     <div class="card-body text-center" id="mandi">
+                      <h3>Mandi Prices</h3>
                         <table class="table table-hover">
                             <thead>
                               <tr>
