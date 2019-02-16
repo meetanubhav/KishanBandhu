@@ -104,7 +104,7 @@ $(document).ready(function(){
                     <div class="card-header text-center">Farmers</div>
                     <div class="card-body text-center">
                         <table>
-                            <thead>
+                            <thead class="table table-dark table-striped">
                                   <tr>
                                     <th>Pic</th>
                                     <th>Name</th>
