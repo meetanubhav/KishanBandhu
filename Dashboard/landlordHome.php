@@ -80,6 +80,11 @@ $(document).ready(function(){
                             <div class="row">
                                 <div class="col-md-4 col-sm-12">
                                     <div class="card">
+                                        <div class="upload-image">
+                                                    <h3>Upload Image</h3>
+                                                    <div class="upload-image-preview"></div>
+                                                    <input class="" type="file" name="fileToUpload" id="fileToUpload">  
+                                        </div>  
                                         <div class="card-body text-center" id="cost"></div>
                                     </div>
                                     <br>
