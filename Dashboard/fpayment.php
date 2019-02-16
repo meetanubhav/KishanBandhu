@@ -1,15 +1,16 @@
 <?php
-	session_start();
+    session_start();
     $fid=$_SESSION['fid'];
     $lid=$_SESSION['lid'];
-    $paystat=$_SESSION['paystat'];
+    $landid=$_SESSION['landid'];
+    $paystat=1;
     include '../database_driver/db.php';
-    $r=mysqli_query($con,"INSERT INTO fpay(fid,lid,paystat) VALUES ('$fid','$lid','$paystat')");
+    $r=mysqli_query($con,"INSERT INTO fpay(fid,lid,landid,paystat) VALUES ('$fid','$lid','$landid',$paystat')");
     if ($r>0)
         {
             header('location: ../Dashboard/farmerHome.php');
         }
-        else{
-        	header('location: error.html');
+        else{ 
+            header('location: error.html');
         }
 ?>
