@@ -234,6 +234,23 @@ $(document).ready(function(){
                                 <td>10 months</td>
                                 <td>16,229</td>
                                 <td>10%revenue + capital</td>
+                                <td>5 months</td>
+                                <td>10000</td>
+                                <td>Debit card</td>
+                            </tr>
+                            <tr>
+                                <td>Sai Kiran</td>
+                                <td>12 acers</td>
+                                <td>8 months</td>
+                                <td>11000</td>
+                                <td>Cash</td>
+                            </tr>
+                            <tr>
+                                <td>Suraj</td>
+                                <td>8 acers</td>
+                                <td>6 months</td>
+                                <td>12500</td>
+                                <td>Debit card</td>
                             </tr>
                             </tbody>
                         </table>
