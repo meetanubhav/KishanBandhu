@@ -375,8 +375,22 @@ $(document).ready(function(){
                     </div>
                     <!--  -->
                     <div class="card-body text-center" id="mandiBook">
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et dolore aliquam ea perferendis voluptas. Eaque asperiores fuga corrupti,
- amet dolor itaque error, dolores optio quidem ad odio laborum, repudiandae facilis!
+                      <form action="">
+                        <div class="input-group mb-3">
+                          <label for="crop">Select Crop:</label>
+                          <select class="form-control" name="crop" id="crop">
+                                                    <option>Rice</option>
+                                                    <option>Wheat</option>
+                                                    <option>Maze</option>
+                                                    <option>Jowhar</option>
+                                                    <option>Bajra</option>
+                          </select>
+                        </div>
+                        <div class="input-group mb-3">
+                          <input type="date" class="form-control" placeholder="Enter date" id="date" name="date">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
                     </div>
                     <div class="card-body text-center" id="shop">
                         Shop posting
