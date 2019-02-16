@@ -211,18 +211,18 @@ $(document).ready(function(){
                             </thead>
                             <tbody>
                             <tr>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
-                                <td>john@example.com</td>
-                                <td>john@example.com</td>
+                                <td>Krushna</td>
+                                <td>Debajyot</td>
+                                <td>Rama</td>
+                                <td>Suraj</td>
+                                <td>Sai kiran</td>
                             </tr>
                             <tr>
-                                <td>Mary</td>
-                                <td>Moe</td>
-                                <td>mary@example.com</td>
-                                <td>john@example.com</td>
-                                <td>john@example.com</td>
+                                <td>9</td>
+                                <td>15</td>
+                                <td>12</td>
+                                <td>8</td>
+                                <td>10</td>
                             </tr>
                             <tr>
                                 <td>July</td>
