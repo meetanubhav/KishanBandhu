@@ -101,17 +101,17 @@ $(document).ready(function(){
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="card">
-                    <div class="card-header text-center">Farmers</div>
+                    <div class="card-header text-center">Farmers Nearby</div>
                     <div class="card-body text-center">
-                        <table>
-                            <thead class="table table-dark table-striped">
-                                  <tr>
-                                    <th>Pic</th>
-                                    <th>Name</th>
-                                    <th>City</th>
-                                    <th>District</th>
-                                  </tr>
-                                </thead>
+                        <table class="table table-success" style="background-color: #5cb85c;color: white;">
+                                    <thead style="font-size: 12px;">
+                                    <tr>
+                                        <th>Picture</th>
+                                        <th>Name</th>
+                                        <th>City</th>
+                                        <th>District</th>
+                                    </tr>
+                                    </thead>
                         <?php
                              $r=mysqli_query($con,"select * from fredg");
                              while($arr1 = $r->fetch_assoc()){
