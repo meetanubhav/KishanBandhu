@@ -1,4 +1,6 @@
 <?php
+session_start();
+include '../database_driver/db.php';
     $_SESSION['logout']=44;
     $mid=$_SESSION['mid'];
     $_SESSION['mid']=$mid;
