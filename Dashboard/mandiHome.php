@@ -57,6 +57,8 @@ include '../database_driver/db.php';
     <br>
     <div class="container-fluid">
         <div class="row">
+            <img src="http://agricoop.gov.in/sites/all/themes/agricoop/images/inner-banner.jpg"  style="width: -webkit-fill-available;
+" alt="banner">
         <div class="col-md-3 col-sm-12">
             <div class="card">
                 <div class="card-body text-center"><button type="button" class="btn btn-link btn-lg"
