@@ -1,3 +1,8 @@
+<?php
+    $_SESSION['logout']=44;
+    $mid=$_SESSION['mid'];
+    $_SESSION['mid']=$mid;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
