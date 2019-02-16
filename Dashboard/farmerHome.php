@@ -227,7 +227,8 @@ $(document).ready(function(){
                                         if($payfetch['paystat']==0)
                                         {
                                     ?>                                    
-                                    <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span></button></td>
+                                    <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                                      <span class="fa fa-plus"></span></button></td>
                                     <?php
                                     }
                                     else{?><td><?php echo "Land booked";?></td><?php }
