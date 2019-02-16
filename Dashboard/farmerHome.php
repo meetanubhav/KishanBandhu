@@ -234,9 +234,10 @@ $(document).ready(function(){
                                     
                                     ?>
                                   </tr>
-                                </tbody>
+                                
                                 
                               <?php }  ?>
+                              </tbody>
                               <br>
                                   </table>
                               
