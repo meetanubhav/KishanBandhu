@@ -116,6 +116,16 @@ $(document).ready(function(){
                 <span class="fa fa-power-off"></span> Sign Out
             </button></a>
         </div>
+        <div class="my-2 my-lg-0" id="mySignoutBtn">
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+        </div>
     </nav>
 
     <!-- Body starts -->
