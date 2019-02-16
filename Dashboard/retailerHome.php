@@ -104,6 +104,14 @@ $(document).ready(function(){
                     <div class="card-header text-center">Farmers</div>
                     <div class="card-body text-center">
                         <table>
+                            <thead>
+                                  <tr>
+                                    <th>Pic</th>
+                                    <th>Name</th>
+                                    <th>City</th>
+                                    <th>District</th>
+                                  </tr>
+                                </thead>
                         <?php
                              $r=mysqli_query($con,"select * from fredg");
                              while($arr1 = $r->fetch_assoc()){
