@@ -33,18 +33,18 @@ if (isset($_POST["submit"]))
 	}
 	echo $des;
 
-	include '../database_driver/db.php';
-
-	$result=mysqli_query($con,"insert into addland( lid, area, price, month, crop, year, des, tot) values ('$lid', '$area', '$price', '$month', '$crop', $year', '$des', '$tot)");
+	// include '../database_driver/db.php';
+	$con = mysqli_connect("localhost","root","","kisan") or die ("conn fail");
+	$result=mysqli_query($con,"INSERT INTO addland( lid, area, price, month, crop, year, des, tot) values ('$lid', '$area', '$price', '$month', '$crop', '$year', '$des', '$tot')");
 
 
 	// $r=mysqli_query($con,"INSERT INTO addland(lid, area, price, month, crop, year, des, tot) VALUES ('$lid', '$area', '$price', '$month', '$crop', $year', '$des', '$tot)");
-	if ($r>0)
+	if ($result>0)
         {
         	echo "string";
         	$_SESSION['lid']=$lid;
             header('location:  landlordHome.php');
         }
-        else{header('location: error.html');}
+        // else{header('location: error.html');}
 }
 ?>
