@@ -231,12 +231,13 @@ $(document).ready(function(){
                                     <?php
                                     }
                                     else{
-                                        echo "Land booked";
+                                        print_r("Land booked");
                                     }
-                                    } 
+                                    
                                     ?>
                                   </tr>
                                 </tbody>
+                              <?php }  ?>
                               </table>
                             
                             <div class="modal fade" id="myModal">
