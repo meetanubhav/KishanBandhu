@@ -214,23 +214,23 @@ $(document).ready(function(){
                             <tr>
                                 <td>Krushna</td>
                                 <td>15 acers</td>
-                                <td></td>
+                                <td>5 months</td>
+                                <td>10000</td>
+                                <td>Debit card</td>
+                            </tr>
+                            <tr>
+                                <td>Sai Kiran</td>
+                                <td>12 acers</td>
+                                <td>8 months</td>
+                                <td>11000</td>
+                                <td>Cash</td>
+                            </tr>
+                            <tr>
                                 <td>Suraj</td>
-                                <td>Sai kiran</td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>15</td>
-                                <td>12</td>
-                                <td>8</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
-                                <td>july@example.com</td>
-                                <td>july@example.com</td>
+                                <td>8 acers</td>
+                                <td>6 months</td>
+                                <td>12500</td>
+                                <td>Debit card</td>
                             </tr>
                             </tbody>
                         </table>
