@@ -94,9 +94,9 @@ $(document).ready(function(){
   });
 });
 $(document).ready(function(){
-    $("#shop").hide();
+    $("#mandiBook").hide();
   $("#hide").click(function(){
-    $("#shop").hide();
+    $("#mandiBook").hide();
   });
   $("#show4").click(function(){
     $("#shop").hide();
@@ -377,7 +377,7 @@ $(document).ready(function(){
                     <!--  -->
                     <div class="card-body text-center" id="mandiBook">
                       <form action="">
-                        <div class="input-group mb-3">
+                        <div class="form-group mb-3">
                           <label for="crop">Select Crop:</label>
                           <select class="form-control" name="crop" id="crop">
                                                     <option>Rice</option>
@@ -387,7 +387,7 @@ $(document).ready(function(){
                                                     <option>Bajra</option>
                           </select>
                         </div>
-                        <div class="input-group mb-3">
+                        <div class="form-group mb-3">
                           <input type="date" class="form-control" placeholder="Enter date" id="date" name="date">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
