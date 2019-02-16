@@ -228,30 +228,15 @@ $(document).ready(function(){
                     </div>
                     <!-- govt scheme -->
                     <div class="card-body text-center" id="govtScheme">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        govtschemes
                     </div>
                     <!--  -->
                     <div class="card-body text-center" id="mandi">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Mandi rates
                     </div>
                     <!--  -->
                     <div class="card-body text-center" id="shop">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Shop posting
                     </div>
                 </div>
             </div>
@@ -260,7 +245,7 @@ $(document).ready(function(){
                     <div class="card-header text-center">Expert's Advice</div>
                     <div class="card-body text-center">
                         <?php
-                        $_SESSION['paystat']=$totalamt;
+                        // $_SESSION['paystat']=$totalamt;
                             // if ($arr=mysqli_fetch_assoc($r))
                             // {
                             //     echo $arr['name'];
@@ -273,5 +258,4 @@ $(document).ready(function(){
     </div>
     <!-- Body ended -->
 </body>
-
 </html>
