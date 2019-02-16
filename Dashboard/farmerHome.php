@@ -196,7 +196,7 @@ $(document).ready(function(){
                                     <th>Total</th>
                                   </tr>
                                 </thead>
-                                <tbody>
+                                
                                   <!-- <tr>
                                     <td>Default</td>
                                     <td>Defaultson</td>
@@ -208,7 +208,7 @@ $(document).ready(function(){
                             {
                             // echo $arr1['tot'];      
                             // echo "string";    
-                            ?>
+                            ?><tbody>
                                   <tr class="table-primary">
                                     <td><?php echo $arr1['area']; ?> Acers</td>
                                     <td><?php echo $arr1['price']; ?></td>
