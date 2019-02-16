@@ -198,18 +198,18 @@ $(document).ready(function(){
                                     <?php 
                                     $_SESSION['landid']=$landid;
                                     $paycheck=mysqli_query($con,"select * from fpay where landid='$landid'");
-                                    if($payfetch=mysqli_fetch_assoc($paycheck))
-                                    {
-                                        if($payfetch['paystat']==0)
-                                        {
+                                    // if($payfetch=mysqli_fetch_assoc($paycheck))
+                                    // {
+                                    //     if($payfetch['paystat']==0)
+                                    //     {
                                     ?>                                    
                                     <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span></button></td>
                                     <?php
-                                    }
-                                    else{
-                                        echo "Land booked";
-                                    }
-                                    } 
+                                    // }
+                                    // else{
+                                    //     echo "Land booked";
+                                    // }
+                                    // } 
                                     ?>
                                   </tr>
                                 </tbody>
@@ -218,7 +218,7 @@ $(document).ready(function(){
                             <div class="modal fade" id="myModal">
                                 <div class="modal-dialog modal-sm">
                                   <div class="modal-content">
-                                    <div class="modal-header">
+                                    <div class="modal-header">How you pay?
                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <!-- Modal body -->
@@ -230,11 +230,13 @@ $(document).ready(function(){
                                       <div id="makeDeal">
                                           <form method="POST" action="landreq.php">
                                             <div class="form-group">
-                                              <label>Expected</label>
+                                              <label></label>
                                             </div>
                                             <div class="form-group">
                                               <label for="rev">% of revenue:</label>
                                               <input type="text" class="form-control" id="rev">
+                                          </div>
+                                          <div class="form-group">
                                               <input type="text" class="form-control" id="rev">
                                               <input type="submit" class="btn btn-success btn-sm" name="submit">
                                             </div>
