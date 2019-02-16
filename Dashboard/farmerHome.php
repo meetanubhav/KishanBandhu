@@ -157,7 +157,7 @@ $(document).ready(function(){
                             // echo $arr1['tot'];      
                             // echo "string";    
                             ?>
-                            <table class="table">
+                            <table class="table table-light table-striped">
                                 <thead>
                                   <tr>
                                     <th>Area</th>
