@@ -22,7 +22,8 @@ include '../database_driver/db.php';
 
     <script>
     $(document).ready(function(){
-    $("#price").show();
+    $("#photo").show();
+    $("#price").hide();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
     $("#issues").hide();
@@ -31,13 +32,15 @@ include '../database_driver/db.php';
   });
   $("#show").click(function(){
      $("#price").show();
+     $("#photo").hide();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
     $("#issues").hide();
   });
 });
     $(document).ready(function(){
-    $("#price").show();
+        $("#photo").show();
+    $("#price").hide();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
     $("#issues").hide();
@@ -46,6 +49,7 @@ include '../database_driver/db.php';
   });
   $("#show1").click(function(){
      $("#price").hide();
+     $("#photo").hide();
     $("#farmerList").show();
     $("#farmerUpdate").hide();
     $("#issues").hide();
@@ -53,7 +57,8 @@ include '../database_driver/db.php';
 });
 
     $(document).ready(function(){
-    $("#price").show();
+        $("#photo").show();
+    $("#price").hide();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
     $("#issues").hide();
@@ -62,6 +67,7 @@ include '../database_driver/db.php';
   });
   $("#show2").click(function(){
      $("#price").hide();
+     $("#photo").hide();
     $("#farmerList").hide();
     $("#farmerUpdate").show();
     $("#issues").hide();
@@ -69,7 +75,8 @@ include '../database_driver/db.php';
 });
 
     $(document).ready(function(){
-    $("#price").show();
+        $("#photo").show();
+    $("#price").hide();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
     $("#issues").hide();
@@ -80,6 +87,7 @@ include '../database_driver/db.php';
      $("#price").hide();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
+    $("#photo").hide();
     $("#issues").show();
   });
 });
@@ -127,6 +135,9 @@ include '../database_driver/db.php';
         <div class="col-md-9 col-sm-12">
             <div class="card">
                 <div class="card-body text-center">
+                    <div id="photo">
+                        <img src="https://casi.sas.upenn.edu/sites/default/files/Mandis_0.jpg" alt="">
+                    </div>
                     <div id="price">
                         <h3>Market Price</h3>
                         <table class="table table-hover">
