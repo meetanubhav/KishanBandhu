@@ -242,59 +242,59 @@ $(document).ready(function(){
                     <!-- govt scheme -->
                     <div class="card-body text-center" id="govtScheme">
                         <table class="table table-light table-striped">
-              <thead>
-                <tr>
-                  <!-- <th></th> -->
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Soil Health Card Scheme</td>
-                </tr>
-                <tr>
-                  <td>National Mission for Sustainable Agriculture (NMSA)</td>
-                </tr>
-                <tr>
-                  <td>Neem Coated Urea (NCU)</td>
-                </tr>
-                <tr>
-                  <td>Pradhan Mantri Krishi Sinchai Yojana (PMKSY)</td>
-                </tr>
-                <tr>
-                  <td>Paramparagat Krishi Vikas Yojana (PKVY)</td>
-                </tr>
-                <tr>
-                  <td>National Agriculture Market (e-NAM)</td>
-                </tr>
-                <tr>
-                  <td>Micro Irrigation Fund (MIF)</td>
-                </tr>
-                <tr>
-                  <td>Agriculture Contingency Plan </td>
-                </tr>
-                <tr>
-                  <td>Rainfed Area Development Programme (RADP)</td>
-                </tr>
-                <tr>
-                  <td>National Watershed Development Project for Rainfed Areas (NWDPRA)</td>
-                </tr>
-                <tr>
-                  <td>Pradhan Mantri Fasal Bima Yojana (PMFBY)</td>
-                </tr>
-                <tr>
-                  <td>Livestock insurance Scheme</td>
-                </tr>
-                <tr>
-                  <td>National Scheme on Welfare of Fishermen</td>
-                </tr>
-                <tr>
-                  <td>Scheme on Fisheries Training and Extension</td>
-                </tr>
-                <tr>
-                  <td>Gramin Bhandaran Yojna</td>
-                </tr>
-              </tbody>
-            </table>  
+                          <thead>
+                            <tr>
+                              <!-- <th></th> -->
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Soil Health Card Scheme</td>
+                            </tr>
+                            <tr>
+                              <td>National Mission for Sustainable Agriculture (NMSA)</td>
+                            </tr>
+                            <tr>
+                              <td>Neem Coated Urea (NCU)</td>
+                            </tr>
+                            <tr>
+                              <td>Pradhan Mantri Krishi Sinchai Yojana (PMKSY)</td>
+                            </tr>
+                            <tr>
+                              <td>Paramparagat Krishi Vikas Yojana (PKVY)</td>
+                            </tr>
+                            <tr>
+                              <td>National Agriculture Market (e-NAM)</td>
+                            </tr>
+                            <tr>
+                              <td>Micro Irrigation Fund (MIF)</td>
+                            </tr>
+                            <tr>
+                              <td>Agriculture Contingency Plan </td>
+                            </tr>
+                            <tr>
+                              <td>Rainfed Area Development Programme (RADP)</td>
+                            </tr>
+                            <tr>
+                              <td>National Watershed Development Project for Rainfed Areas (NWDPRA)</td>
+                            </tr>
+                            <tr>
+                              <td>Pradhan Mantri Fasal Bima Yojana (PMFBY)</td>
+                            </tr>
+                            <tr>
+                              <td>Livestock insurance Scheme</td>
+                            </tr>
+                            <tr>
+                              <td>National Scheme on Welfare of Fishermen</td>
+                            </tr>
+                            <tr>
+                              <td>Scheme on Fisheries Training and Extension</td>
+                            </tr>
+                            <tr>
+                              <td>Gramin Bhandaran Yojna</td>
+                            </tr>
+                          </tbody>
+                        </table>  
                     </div>
                     <!--  -->
                     <div class="card-body text-center" id="mandi">
