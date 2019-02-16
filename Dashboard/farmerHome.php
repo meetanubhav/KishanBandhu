@@ -45,6 +45,7 @@ $(document).ready(function(){
     $("#govtScheme").hide();
     $("#shop").hide();
     $("#mandi").hide();
+    $("#mandiBook").hide();
   });
 });
 
@@ -59,6 +60,7 @@ $(document).ready(function(){
     $("#farmerContent").hide();
     $("#shop").hide();
     $("#mandi").hide();
+    $("#mandiBook").hide();
   });
 });
 
@@ -73,6 +75,7 @@ $(document).ready(function(){
     $("#farmerContent").hide();
     $("#shop").hide();
     $("#govtScheme").hide();
+    $("#mandiBook").hide();
   });
 });
 
@@ -87,6 +90,21 @@ $(document).ready(function(){
     $("#govtScheme").hide();
     $("#farmerContent").hide();
     $("#mandi").hide();
+    $("#mandiBook").hide();
+  });
+});
+$(document).ready(function(){
+    $("#shop").hide();
+  $("#hide").click(function(){
+    $("#shop").hide();
+  });
+  $("#show4").click(function(){
+    $("#shop").hide();
+    $("#default").hide();
+    $("#govtScheme").hide();
+    $("#farmerContent").hide();
+    $("#mandi").hide();
+    $("#mandiBook").show();
   });
 });
 
@@ -148,6 +166,9 @@ $(document).ready(function(){
                     <hr>
                     <div class="card-body text-center"><button type="button" class="btn btn-link btn-md"
                             id="show2">Mandi</button></div>
+                    <hr>
+                    <div class="card-body text-center"><button type="button" class="btn btn-link btn-md"
+                            id="show4">Mandi Book</button></div>
                     <hr>
                     <div class="card-body text-center"><button type="button" class="btn btn-link btn-md"
                             id="show3">Shop</button></div>
@@ -352,6 +373,10 @@ $(document).ready(function(){
                         </table>
                     </div>
                     <!--  -->
+                    <div class="card-body text-center" id="mandiBook">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et dolore aliquam ea perferendis voluptas. Eaque asperiores fuga corrupti,
+ amet dolor itaque error, dolores optio quidem ad odio laborum, repudiandae facilis!
+                    </div>
                     <div class="card-body text-center" id="shop">
                         Shop posting
                     </div>
