@@ -12,5 +12,11 @@ elseif ($logout==11) {
 	session_unset($_SESSION['sessionid']);
 	header('location:../index.html');
 }
+elseif ($logout==33) {
+	session_unset($_SESSION["rid"]);
+	session_unset($_SESSION['sessionid']);
+	header('location:../index.html');
+}
+
 
 ?>
