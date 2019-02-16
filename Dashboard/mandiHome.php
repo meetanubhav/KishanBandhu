@@ -31,13 +31,14 @@ include '../database_driver/db.php';
   });
   $("#show").click(function(){
      $("#price").show();
+     $("#photo").hide();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
     $("#issues").hide();
   });
 });
     $(document).ready(function(){
-    $("#price").show();
+        $("#price").show();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
     $("#issues").hide();
@@ -46,6 +47,7 @@ include '../database_driver/db.php';
   });
   $("#show1").click(function(){
      $("#price").hide();
+     $("#photo").hide();
     $("#farmerList").show();
     $("#farmerUpdate").hide();
     $("#issues").hide();
@@ -62,6 +64,7 @@ include '../database_driver/db.php';
   });
   $("#show2").click(function(){
      $("#price").hide();
+     $("#photo").hide();
     $("#farmerList").hide();
     $("#farmerUpdate").show();
     $("#issues").hide();
@@ -80,6 +83,7 @@ include '../database_driver/db.php';
      $("#price").hide();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
+    $("#photo").hide();
     $("#issues").show();
   });
 });
@@ -104,7 +108,6 @@ include '../database_driver/db.php';
     </nav>
 
     <!-- Body -->
-    <br>
     <div class="container-fluid">
         <div class="row">
             <img src="http://agricoop.gov.in/sites/all/themes/agricoop/images/inner-banner.jpg"  style="width: -webkit-fill-available;
