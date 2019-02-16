@@ -22,8 +22,7 @@ include '../database_driver/db.php';
 
     <script>
     $(document).ready(function(){
-    $("#photo").show();
-    $("#price").hide();
+    $("#price").show();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
     $("#issues").hide();
@@ -39,8 +38,7 @@ include '../database_driver/db.php';
   });
 });
     $(document).ready(function(){
-        $("#photo").show();
-    $("#price").hide();
+        $("#price").show();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
     $("#issues").hide();
@@ -57,8 +55,7 @@ include '../database_driver/db.php';
 });
 
     $(document).ready(function(){
-        $("#photo").show();
-    $("#price").hide();
+    $("#price").show();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
     $("#issues").hide();
@@ -75,8 +72,7 @@ include '../database_driver/db.php';
 });
 
     $(document).ready(function(){
-        $("#photo").show();
-    $("#price").hide();
+    $("#price").show();
     $("#farmerList").hide();
     $("#farmerUpdate").hide();
     $("#issues").hide();
@@ -112,7 +108,6 @@ include '../database_driver/db.php';
     </nav>
 
     <!-- Body -->
-    <br>
     <div class="container-fluid">
         <div class="row">
             <img src="http://agricoop.gov.in/sites/all/themes/agricoop/images/inner-banner.jpg"  style="width: -webkit-fill-available;
@@ -135,9 +130,6 @@ include '../database_driver/db.php';
         <div class="col-md-9 col-sm-12">
             <div class="card">
                 <div class="card-body text-center">
-                    <div id="photo">
-                        <img src="https://casi.sas.upenn.edu/sites/default/files/Mandis_0.jpg" alt="">
-                    </div>
                     <div id="price">
                         <h3>Market Price</h3>
                         <table class="table table-hover">
