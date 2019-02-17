@@ -437,10 +437,38 @@ $(document).ready(function(){
                         <!-- Tab panes -->
                         <div class="tab-content">
                           <div id="shop1" class="container tab-pane active"><br>
-                            
+                            <div class="form-group">
+                                <label for="crop">Item</label>
+                                <select class="form-control" name="crop" id="crop">
+                                    <option>Tractor</option>
+                                    <option>Pesticide</option>
+                                    <option>Fertilizer</option>
+                                    <option>Sickel</option>
+                                    <option>others</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="area">Quantity:</label>
+                                <input type="number" class="form-control" name="quantity" id="quantity">
+                            </div>
+                            <button type="submit" class="btn btn-success" id="hide">Submit</button>
                           </div>
                           <div id="shop2" class="container tab-pane fade"><br>
-                            
+                            <div class="form-group">
+                                <label for="crop">Item</label>
+                                <select class="form-control" name="crop" id="crop">
+                                    <option>Tractor</option>
+                                    <option>Pesticide</option>
+                                    <option>Fertilizer</option>
+                                    <option>Sickel</option>
+                                    <option>others</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="area">Quantity:</label>
+                                <input type="number" class="form-control" name="quantity" id="quantity">
+                            </div>
+                            <button type="submit" class="btn btn-success" id="hide">Submit</button>
                           </div>
                         </div>
                     </div>
