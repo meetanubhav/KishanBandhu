@@ -1689,11 +1689,7 @@ include '../database_driver/db.php';
                             ?>
                     </div>
                     <div id="farmerUpdate">
-                        <?php
-                        while ($arr1 = $lr->fetch_assoc())
-                            {
-                                ?>
-                                <table class="table table-success" style="background-color: #5cb85c;color: white;">
+                        <table class="table table-success" style="background-color: #5cb85c;color: white;">
                                     <thead style="font-size: 12px;">
                                     <tr>
                                         <th>Picture</th>
@@ -1702,6 +1698,11 @@ include '../database_driver/db.php';
                                         <th>District</th>
                                     </tr>
                                     </thead>
+                        <?php
+                        while ($arr1 = $lr->fetch_assoc())
+                            {
+                                ?>
+                                
                                     <tr>
                                         <td><img src="<?php echo $arr1['pic']; ?>"style="width: 40px;"></td>
                                         <td><?php echo $arr1['name']; ?> </td>
