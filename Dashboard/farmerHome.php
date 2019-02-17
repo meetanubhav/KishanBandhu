@@ -425,7 +425,24 @@ $(document).ready(function(){
                       </form>
                     </div>
                     <div class="card-body text-center" id="shop">
-                        Shop posting
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#shop1">Shop 1</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#shop2">Shop 2</a>
+                          </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                          <div id="shop1" class="container tab-pane active"><br>
+                            
+                          </div>
+                          <div id="shop2" class="container tab-pane fade"><br>
+                            
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
