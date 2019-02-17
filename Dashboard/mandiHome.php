@@ -1663,7 +1663,7 @@ include '../database_driver/db.php';
                     $far=mysqli_fetch_assoc($res);
                     $district=$far['district'];
                     $lr=mysqli_query($con,"select * from fredg");
-                    if($arr1=mysqli_fetch_assoc($lr))
+                    while ($arr1 = $lr->fetch_assoc())
                             {
                                 ?>
                                 <table class="table table-success" style="background-color: #5cb85c;color: white;">
@@ -1689,8 +1689,32 @@ include '../database_driver/db.php';
                             ?>
                     </div>
                     <div id="farmerUpdate">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique quia a laboriosam rem earum, 
-dolores sunt soluta dolor architecto quibusdam sed? Dicta porro deleniti beatae eligendi, magnam amet obcaecati!
+                        <?php
+                        while ($arr1 = $lr->fetch_assoc())
+                            {
+                                ?>
+                                <table class="table table-success" style="background-color: #5cb85c;color: white;">
+                                    <thead style="font-size: 12px;">
+                                    <tr>
+                                        <th>Picture</th>
+                                        <th>Name</th>
+                                        <th>City</th>
+                                        <th>District</th>
+                                    </tr>
+                                    </thead>
+                                    <tr>
+                                        <td><img src="<?php echo $arr1['pic']; ?>"style="width: 40px;"></td>
+                                        <td><?php echo $arr1['name']; ?> </td>
+                                        <td><?php echo $arr1['city']; ?> </td>
+                                        <td><?php echo $arr1['district']; ?> </td>
+                                    </tr>
+                                </table>
+                                 <?php
+                            // echo $arr1['name'];      
+                            // echo "string"; 
+                            }   
+                            ?>
+
                     </div>
                     <div id="issues">
                         <table class="table table-hover">
