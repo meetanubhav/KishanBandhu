@@ -121,7 +121,7 @@ include '../database_driver/db.php';
                         id="show1">Farmer List</button></div>
                 <hr>
                 <div class="card-body text-center"><button type="button" class="btn btn-link btn-lg"
-                        id="show2">Update Farmer</button></div>
+                        id="show2">Slot Booking Request's</button></div>
                 <hr>
                 <div class="card-body text-center"><button type="button" class="btn btn-link btn-lg"
                         id="show3">Issues</button></div>
@@ -1658,12 +1658,12 @@ include '../database_driver/db.php';
                         </table>
                     </div>
                     <div id="farmerList">
-<?php 
-$res=mysqli_query($con,"select * from mredg where mid='$mid'");
-$far=mysqli_fetch_assoc($res);
-$district=$far['district'];
-$lr=mysqli_query($con,"select * from fredg where district='$district'");
-if($arr1=mysqli_fetch_assoc($lr))
+                    <?php 
+                    $res=mysqli_query($con,"select * from mredg where mid='$mid'");
+                    $far=mysqli_fetch_assoc($res);
+                    $district=$far['district'];
+                    $lr=mysqli_query($con,"select * from fredg");
+                    while ($arr1 = $lr->fetch_assoc())
                             {
                                 ?>
                                 <table class="table table-success" style="background-color: #5cb85c;color: white;">
@@ -1689,8 +1689,33 @@ if($arr1=mysqli_fetch_assoc($lr))
                             ?>
                     </div>
                     <div id="farmerUpdate">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique quia a laboriosam rem earum, 
-dolores sunt soluta dolor architecto quibusdam sed? Dicta porro deleniti beatae eligendi, magnam amet obcaecati!
+                        <table class="table table-success" style="background-color: #5cb85c;color: white;">
+                                    <thead style="font-size: 12px;">
+                                    <tr>
+                                        <th>Picture</th>
+                                        <th>Name</th>
+                                        <th>City</th>
+                                        <th>District</th>
+                                    </tr>
+                                    </thead>
+                        <?php
+                        while ($arr1 = $lr->fetch_assoc())
+                            {
+                                ?>
+                                
+                                    <tr>
+                                        <td><img src="<?php echo $arr1['pic']; ?>"style="width: 40px;"></td>
+                                        <td><?php echo $arr1['name']; ?> </td>
+                                        <td><?php echo $arr1['city']; ?> </td>
+                                        <td><?php echo $arr1['district']; ?> </td>
+                                    </tr>
+                                
+                                 <?php
+                            // echo $arr1['name'];      
+                            // echo "string"; 
+                            }   
+                            ?>
+</table>
                     </div>
                     <div id="issues">
                         <table class="table table-hover">
