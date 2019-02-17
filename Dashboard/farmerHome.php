@@ -116,6 +116,12 @@ $(document).ready(function(){
     $("#btnsel").hide();
   });
 });
+
+$(document).ready(function(){
+  $("#schemeLink").click(function(){
+    $("#schemeModal").modal();
+  });
+});
 </script>
 </head>
 
@@ -201,14 +207,14 @@ $(document).ready(function(){
                                     <td>Default</td>
                                     <td>Defaultson</td>
                                     <td>def@somemail.com</td>
-                                  </tr>  -->     
+                                  </tr>  -->  <tbody>   
                                    <?php
                                  // if($arr1=mysqli_fetch_assoc($lr))
                                    while ($arr1 = $lr->fetch_assoc())
-                            {
-                            // echo $arr1['tot'];      
-                            // echo "string";    
-                            ?><tbody>
+                                  {
+                                  // echo $arr1['tot'];      
+                                  // echo "string";    
+                                  ?>
                                   <tr class="table-primary">
                                     <td><?php echo $arr1['area']; ?> Acers</td>
                                     <td><?php echo $arr1['price']; ?></td>
@@ -224,21 +230,24 @@ $(document).ready(function(){
                                     $paycheck=mysqli_query($con,"select * from fpay where landid='$landid'");
                                     if($payfetch=mysqli_fetch_assoc($paycheck))
                                     {
-                                        if($payfetch['paystat']==1)
+                                        if($payfetch['paystat']==0)
                                         {
                                     ?>                                    
-                                    <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span></button></td>
+                                    <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                                      <span class="fa fa-plus"></span></button></td>
                                     <?php
                                     }
-                                    else{
-                                        print_r("Land booked");
-                                    }
+                                    else{?><td><?php echo "Land booked";?></td><?php }
                                     
                                     ?>
                                   </tr>
-                                </tbody>
-                              <?php }  ?>
-                              </table>
+                                
+                                
+                              <?php } } ?>
+                              </tbody>
+                              <br>
+                                  </table>
+                              
                             
                             <div class="modal fade" id="myModal">
                                 <div class="modal-dialog modal-sm">
@@ -272,14 +281,12 @@ $(document).ready(function(){
                                   </div>
                                 </div>
                              </div>
-                            <?php      
-                            }
-                            ?>
+                            
                         
                     </div>
                     <!-- govt scheme -->
                     <div class="card-body text-center" id="govtScheme">
-                        <table class="table table-light table-striped">
+                        <table class="table table-hover">
                           <thead>
                             <tr>
                               <!-- <th></th> -->
@@ -287,7 +294,7 @@ $(document).ready(function(){
                           </thead>
                           <tbody>
                             <tr>
-                              <td>Soil Health Card Scheme</td>
+                              <td><a data-toggle="modal" href="#schemeModal" id="schemeLink" style="color: black;">Soil Health Card Scheme</a></td>
                             </tr>
                             <tr>
                               <td>National Mission for Sustainable Agriculture (NMSA)</td>
@@ -332,7 +339,31 @@ $(document).ready(function(){
                               <td>Gramin Bhandaran Yojna</td>
                             </tr>
                           </tbody>
-                        </table>  
+                        </table> 
+                        <div class="modal fade" id="schemeModal">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                            
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                              </div>
+                              
+                              <!-- Modal body -->
+                              <div class="modal-body">
+                                Soil Health Card Scheme is a scheme launched by the Government of India in 19 February 2015.
+                                 Under the scheme, the government plans to issue soil cards to farmers which will carry crop-wise 
+                                 recommendations of nutrients and fertilisers required for the individual farms to help farmers 
+                                 to improve productivity through judicious use of inputs. All soil samples are to be tested in 
+                                 various soil testing labs across the country. Thereafter the experts will analyse the strength 
+                                 and weaknesses (micro-nutrients deficiency) of the soil and suggest measures to deal with it. 
+                                 The result and suggestion will be displayed in the cards. The government plans to issue the cards 
+                                 to 14 crore farmers.
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div> 
                     </div>
                     <!--  -->
                     <div class="card-body text-center" id="mandi">

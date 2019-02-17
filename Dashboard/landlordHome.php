@@ -234,9 +234,9 @@ $(document).ready(function(){
                                 <td>10 months</td>
                                 <td>16,229</td>
                                 <td>10%revenue + capital</td>
-                                <td>5 months</td>
+                                <!-- <td>5 months</td>
                                 <td>10000</td>
-                                <td>Debit card</td>
+                                <td>Debit card</td> -->
                             </tr>
                             <tr>
                                 <td>Sai Kiran</td>
