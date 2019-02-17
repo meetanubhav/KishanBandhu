@@ -294,7 +294,7 @@ $(document).ready(function(){
                           </thead>
                           <tbody>
                             <tr>
-                              <td><a data-toggle="modal" href="#schemeModal" id="schemeLink" style="color: white;">Soil Health Card Scheme</a></td>
+                              <td><a data-toggle="modal" href="#schemeModal" id="schemeLink" style="color: black;">Soil Health Card Scheme</a></td>
                             </tr>
                             <tr>
                               <td>National Mission for Sustainable Agriculture (NMSA)</td>
@@ -346,13 +346,19 @@ $(document).ready(function(){
                             
                               <!-- Modal Header -->
                               <div class="modal-header">
-                                <h4 class="modal-title">Modal Heading</h4>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
                               </div>
                               
                               <!-- Modal body -->
                               <div class="modal-body">
-                                Modal body..
+                                Soil Health Card Scheme is a scheme launched by the Government of India in 19 February 2015.
+                                 Under the scheme, the government plans to issue soil cards to farmers which will carry crop-wise 
+                                 recommendations of nutrients and fertilisers required for the individual farms to help farmers 
+                                 to improve productivity through judicious use of inputs. All soil samples are to be tested in 
+                                 various soil testing labs across the country. Thereafter the experts will analyse the strength 
+                                 and weaknesses (micro-nutrients deficiency) of the soil and suggest measures to deal with it. 
+                                 The result and suggestion will be displayed in the cards. The government plans to issue the cards 
+                                 to 14 crore farmers.
                               </div>
                               
                             </div>
