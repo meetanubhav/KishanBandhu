@@ -1709,13 +1709,13 @@ include '../database_driver/db.php';
                                         <td><?php echo $arr1['city']; ?> </td>
                                         <td><?php echo $arr1['district']; ?> </td>
                                     </tr>
-                                </table>
+                                
                                  <?php
                             // echo $arr1['name'];      
                             // echo "string"; 
                             }   
                             ?>
-
+</table>
                     </div>
                     <div id="issues">
                         <table class="table table-hover">
