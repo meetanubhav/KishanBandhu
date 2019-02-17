@@ -121,7 +121,7 @@ include '../database_driver/db.php';
                         id="show1">Farmer List</button></div>
                 <hr>
                 <div class="card-body text-center"><button type="button" class="btn btn-link btn-lg"
-                        id="show2">Update Farmer</button></div>
+                        id="show2">Slot Booking Request's</button></div>
                 <hr>
                 <div class="card-body text-center"><button type="button" class="btn btn-link btn-lg"
                         id="show3">Issues</button></div>
@@ -1658,12 +1658,12 @@ include '../database_driver/db.php';
                         </table>
                     </div>
                     <div id="farmerList">
-<?php 
-$res=mysqli_query($con,"select * from mredg where mid='$mid'");
-$far=mysqli_fetch_assoc($res);
-$district=$far['district'];
-$lr=mysqli_query($con,"select * from fredg where district='$district'");
-if($arr1=mysqli_fetch_assoc($lr))
+                    <?php 
+                    $res=mysqli_query($con,"select * from mredg where mid='$mid'");
+                    $far=mysqli_fetch_assoc($res);
+                    $district=$far['district'];
+                    $lr=mysqli_query($con,"select * from fredg");
+                    if($arr1=mysqli_fetch_assoc($lr))
                             {
                                 ?>
                                 <table class="table table-success" style="background-color: #5cb85c;color: white;">
