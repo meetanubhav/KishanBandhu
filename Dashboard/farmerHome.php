@@ -225,16 +225,18 @@ $(document).ready(function(){
                                     <td><?php $totalamt=$arr1['tot'];
                                     $landid=$arr1['landid'];
                                     echo $totalamt; ?></td>
+                                    <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                                      <span class="fa fa-plus"></span></button></td>
                                     <?php 
                                     $_SESSION['landid']=$landid;
                                     $paycheck=mysqli_query($con,"select * from fpay where landid='$landid'");
+
                                     if($payfetch=mysqli_fetch_assoc($paycheck))
                                     {
-                                        if($payfetch['paystat']==0)
+                                        if($payfetch['paystat']==1)
                                         {
                                     ?>                                    
-                                    <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
-                                      <span class="fa fa-plus"></span></button></td>
+                                    
                                     <?php
                                     }
                                     else{?><td><?php echo "Land booked";?></td><?php }
