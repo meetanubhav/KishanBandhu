@@ -116,6 +116,12 @@ $(document).ready(function(){
     $("#btnsel").hide();
   });
 });
+
+$(document).ready(function(){
+  $("#schemeLink").click(function(){
+    $("#schemeModal").modal();
+  });
+});
 </script>
 </head>
 
@@ -280,7 +286,7 @@ $(document).ready(function(){
                     </div>
                     <!-- govt scheme -->
                     <div class="card-body text-center" id="govtScheme">
-                        <table class="table table-light table-striped">
+                        <table class="table table-hover">
                           <thead>
                             <tr>
                               <!-- <th></th> -->
@@ -288,7 +294,7 @@ $(document).ready(function(){
                           </thead>
                           <tbody>
                             <tr>
-                              <td>Soil Health Card Scheme</td>
+                              <td><a data-toggle="modal" href="#schemeModal" id="schemeLink" style="color: white;">Soil Health Card Scheme</a></td>
                             </tr>
                             <tr>
                               <td>National Mission for Sustainable Agriculture (NMSA)</td>
@@ -333,7 +339,25 @@ $(document).ready(function(){
                               <td>Gramin Bhandaran Yojna</td>
                             </tr>
                           </tbody>
-                        </table>  
+                        </table> 
+                        <div class="modal fade" id="schemeModal">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                            
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                <h4 class="modal-title">Modal Heading</h4>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                              </div>
+                              
+                              <!-- Modal body -->
+                              <div class="modal-body">
+                                Modal body..
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div> 
                     </div>
                     <!--  -->
                     <div class="card-body text-center" id="mandi">
