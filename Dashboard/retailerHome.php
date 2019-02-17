@@ -94,7 +94,7 @@ $(document).ready(function(){
                                                 <label for="area">Quantity:</label>
                                                 <input type="number" class="form-control" name="quantity" id="quantity">
                                             </div>
-                                            <input type="submit" class="btn btn-success" id="hide"></button>
+                                            <button type="submit" class="btn btn-success" id="hide">Request</button>
                                            <!--  <div class="form-group">
                                                 <label for="des">Description:</label>
                                                 <textarea class="form-control" rows="5" name="des" id="des"></textarea>
